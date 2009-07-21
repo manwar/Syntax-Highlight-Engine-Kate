@@ -6,7 +6,7 @@
 package Syntax::Highlight::Engine::Kate::All;
 
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use Syntax::Highlight::Engine::Kate::AHDL;
 use Syntax::Highlight::Engine::Kate::ANSI_C89;
@@ -16,8 +16,8 @@ use Syntax::Highlight::Engine::Kate::AWK;
 use Syntax::Highlight::Engine::Kate::Ada;
 use Syntax::Highlight::Engine::Kate::Alerts;
 use Syntax::Highlight::Engine::Kate::Asm6502;
-use Syntax::Highlight::Engine::Kate::BaseTest;
-use Syntax::Highlight::Engine::Kate::BaseTestchild;
+#use Syntax::Highlight::Engine::Kate::BaseTest;
+#use Syntax::Highlight::Engine::Kate::BaseTestchild;
 use Syntax::Highlight::Engine::Kate::Bash;
 use Syntax::Highlight::Engine::Kate::BibTeX;
 use Syntax::Highlight::Engine::Kate::C;
