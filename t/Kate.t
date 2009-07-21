@@ -1,8 +1,8 @@
-
 use strict;
+
 use Term::ANSIColor;
 
-use Test;
+use Test::More;
 
 my %reg = ();
 open RG, "<REGISTERED" or  die "cannot open REGISTERED";
@@ -10,7 +10,7 @@ while (my $t = <RG>) {
 	chomp($t);
 	my ($lang, $testfile) = split /\t/, $t;
 	unless (defined($testfile)) { $testfile = "" }
-	print "#language $lang, samplefile, ;$testfile; quovadis\n";
+	#diag "#language $lang, samplefile, ;$testfile; quovadis";
 	$reg{$lang} = $testfile;
 }
 close RG;
@@ -55,28 +55,28 @@ my $numtest = (@langl * 4) + 2 + (@ftl * 2);
 
 plan tests => $numtest;
 use Syntax::Highlight::Engine::Kate;
-ok(1, 1 , "cannot find Kate");
+ok(1, "cannot find Kate");
 
 my $k = new Syntax::Highlight::Engine::Kate(%options);
-ok(defined($k), 1, "cannot create Kate");
+ok(defined($k), "cannot create Kate");
 
 for (@ftl) {
 	my $t = $_;
 	my $l = $k->languagePropose($t);
-	ok($l, $filetypes{$t}, "Cannot select correct filetype for $t");
+	is($l, $filetypes{$t}, "Cannot select correct filetype for $t");
 	$k->languageAutoSet($t);
-	ok($k->language, $filetypes{$t}, "Cannot select correct filetype for $t");
+	is($k->language, $filetypes{$t}, "Cannot select correct filetype for $t");
 }
 
 for (@langl) {
 	my $ln = $_;
-	print "testing $ln\n";
+	#diag "testing $ln";
 	my $md = $k->syntaxes->{$ln};
 	my $mod = "Syntax::Highlight::Engine::Kate::$md";
 	eval "use $mod";
-	ok($@, "", "cannot find $mod");
+	is($@, "", "cannot find $mod");
 	my $m = new $mod(%options);
-	ok(defined($m), 1, "cannot create $mod");
+	ok(defined($m), "cannot create $mod");
 	my $fl = $reg{$ln};
 	if ($fl ne "") {
 		my $txt = "";
@@ -86,19 +86,21 @@ for (@langl) {
 		};
 		close TST;
 		my $res = "";
-		print "testing as kate plugin\n";
+		#diag "testing as kate plugin";
 		$k->language($ln);
 		$k->reset;
 		eval "\$res = \$k->highlightText(\$txt)";
-		ok($@, "", "errors when highlighting");
-#		print $res;
-		print "testing standalone\n";
+		is($@, "", "errors when highlighting");
+#		diag $res;
+		#diag "testing standalone";
 		eval "\$res = \$m->highlightText(\$txt)";
-		ok($@, "", "errors when highlighting");
-#		print $res;
+		is($@, "", "errors when highlighting");
+#		diag $res;
 	} else {
-		skip(1, "no test file");
-		skip(1, "no test file");
+		diag "Should be SKIP-ed! '$ln'";
+		ok(1); ok(1);
+		#skip(1, "no test file");
+		#skip(1, "no test file");
 	}
 }
 
