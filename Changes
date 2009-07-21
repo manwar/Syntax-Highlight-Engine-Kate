@@ -34,3 +34,11 @@ added support for Ansys, Apache Configuration, Email, FreeBASIC, Kate File Templ
 de_DE, en_EN, nl, M3U, Wikimedia, x.org Configuration
  
 No more 16 Mb output at make test
+
+
+0.04 Mon Jun 8 2009
+
+Released by Gabor Szabo
+
+adding test and fixing RT bug #36328: no BaseTest and BaseTestchild modules
+

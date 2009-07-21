@@ -200,3 +200,4 @@ samples/highlight_ocaml.ml
 samples/highlight_octave.m
 samples/xorg.conf
 t/Kate.t
+t/02-perl.t
