@@ -7,7 +7,12 @@ author         'Hans Jeuken';
 all_from       'lib/Syntax/Highlight/Engine/Kate.pm';
 
 requires       'perl'                     => '5.006';
+requires       'Carp'                     => '0';
+requires       'Data::Dumper'             => '0';
+requires       'File::Basename'           => '0';
+
 test_requires  'Test::More'               => '0.88';
+test_requires  'Term::ANSIColor'          => '0';
 
 no_index       'directory'                => qw{ t xt eg share inc privinc };
 homepage       'http://padre.perlide.org/';
