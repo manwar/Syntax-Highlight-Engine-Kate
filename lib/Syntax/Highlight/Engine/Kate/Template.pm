@@ -531,10 +531,13 @@ sub snippet {
 
 sub snippetAppend {
 	my ($self, $ch) = @_;
+
+	return if not defined $ch;
 	$self->{'snippet'} = $self->{'snippet'} . $ch;
 	if ($ch ne '') {
 		$self->linesegment($self->linesegment . $ch);
 	}
+	return;
 }
 
 sub snippetAttribute {
