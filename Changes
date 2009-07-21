@@ -42,3 +42,5 @@ Released by Gabor Szabo
 
 adding test and fixing RT bug #36328: no BaseTest and BaseTestchild modules
 
+0.05 to be released 
+	- Fixing #45512: broken test by silencing the warnings
