@@ -5,6 +5,7 @@
 
 package Syntax::Highlight::Engine::Kate;
 
+use 5.006;
 use vars qw($VERSION);
 $VERSION = '0.05';
 use strict;

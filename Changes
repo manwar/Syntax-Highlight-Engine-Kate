@@ -4,6 +4,7 @@ Revision history for Perl extension Syntax::Highlight::Engine::Kate.
 
 	- Fixing #45512: broken test by silencing the warnings
 	- Switch to use Test::More
+	- Switch to Module::Install
 
 0.05 Mon Jun 8 2009
 

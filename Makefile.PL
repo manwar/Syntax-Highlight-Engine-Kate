@@ -1,12 +1,17 @@
 use 5.006;
-use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
-WriteMakefile(
-    NAME              => 'Syntax::Highlight::Engine::Kate',
-    VERSION_FROM      => 'lib/Syntax/Highlight/Engine/Kate.pm', # finds $VERSION
-    PREREQ_PM         => {}, # e.g., Module::Name => 1.1
-    ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM  => 'lib/Syntax/Highlight/Engine/Kate.pod', # retrieve abstract from module
-       AUTHOR         => 'Hans Jeuken <haje <at> toneel <dot> demon <dot> nl>') : ()),
-);
+use inc::Module::Install 0.91;
+
+name           'Syntax-Highlight-Engine-Kate';
+license        'perl';
+author         'Hans Jeuken';
+all_from       'lib/Syntax/Highlight/Engine/Kate.pm';
+
+requires       'perl'                     => '5.006';
+test_requires  'Test::More'               => '0.88';
+
+no_index       'directory'                => qw{ t xt eg share inc privinc };
+homepage       'http://padre.perlide.org/';
+#bugtracker     'http://padre.perlide.org/';
+repository     'http://svn.perlide.org/padre/trunk/Syntax-Highlight-Engine-Kate/';
+
+WriteAll;
