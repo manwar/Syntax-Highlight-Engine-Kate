@@ -4,8 +4,7 @@
 
 package Syntax::Highlight::Engine::Kate::Template;
 
-use vars qw($VERSION);
-$VERSION = '0.03';
+our $VERSION = '0.06';
 
 use strict;
 use Carp qw(cluck);

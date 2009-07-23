@@ -11,8 +11,7 @@
 
 package Syntax::Highlight::Engine::Kate::E_Language;
 
-use vars qw($VERSION);
-$VERSION = '0.03';
+our $VERSION = '0.06';
 
 use strict;
 use warnings;

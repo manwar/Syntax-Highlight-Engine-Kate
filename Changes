@@ -1,6 +1,6 @@
 Revision history for Perl extension Syntax::Highlight::Engine::Kate.
 
-0.06 to be released 
+0.06 2009.07.23
 
 	- Fixing #45512: broken test by silencing the warnings
 	- Switch to use Test::More

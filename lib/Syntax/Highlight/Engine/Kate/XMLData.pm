@@ -4,14 +4,12 @@
 
 package Syntax::Highlight::Engine::Kate::XMLData;
 
-
-use vars qw($VERSION);
-$VERSION = '0.01';
-
 use strict;
 use warnings;
 use XML::TokeParser;
 use Data::Dumper;
+
+our $VERSION = '0.06';
 
 my $regchars = "\\^.\$|()[]{}*+?~!%^&/";
 

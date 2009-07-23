@@ -4,8 +4,7 @@
 
 package Syntax::Highlight::Engine::Kate::ToolKit;
 
-use vars qw($VERSION);
-$VERSION = '0.01';
+our $VERSION = '0.06';
 
 use strict;
 use warnings;
