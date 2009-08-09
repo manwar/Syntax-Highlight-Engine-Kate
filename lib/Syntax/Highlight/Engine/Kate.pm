@@ -1010,7 +1010,7 @@ as Perl itself.
 
 =head1 SEE ALSO
 
-Synax::Highlight::Engine::Kate::Template http:://www.kate-editor.org
+Syntax::Highlight::Engine::Kate::Template http:://www.kate-editor.org
 
 =cut
 
