@@ -916,8 +916,6 @@ sub testStringDetect {
 
 __END__
 
-=cut
-
 =head1 NAME
 
 Syntax::Highlight::Engine::Kate::Template - a template for syntax highlighting plugins
@@ -1178,18 +1176,3 @@ Perl itself
 =head1 SEE ALSO
 
 Synax::Highlight::Engine::Kate http:://www.kate-editor.org
-
-=cut
-
-
-
-
-
-
-
-
-
-
-
-
-

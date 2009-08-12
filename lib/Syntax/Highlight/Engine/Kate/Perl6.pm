@@ -2918,8 +2918,6 @@ It works quite fine, but can use refinement and optimization.
 
 It inherits Syntax::Higlight::Engine::Kate::Template. See also there.
 
-=cut
-
 =head1 AUTHOR
 
 Ahmad M. Zawawi C<< <ahmad.zawawi at gmail.com> >>
