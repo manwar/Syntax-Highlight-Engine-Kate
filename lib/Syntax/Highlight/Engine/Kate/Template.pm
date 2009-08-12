@@ -844,6 +844,13 @@ sub testRegExpr {
 	my $pos;
 #	my @cap = ();
 	my $sample = $$text;
+
+	# emergency measurements to avoid exception (szabgab)
+	$reg = eval { qr/$reg/ };
+	if ($@) {
+		warn $@;
+		return '';
+	}
 	if ($insensitive) {
 		if ($sample =~ /$reg/ig) {
 			$pos = pos($sample);
