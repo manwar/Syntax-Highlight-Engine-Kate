@@ -1,5 +1,8 @@
 Revision history for Perl extension Syntax::Highlight::Engine::Kate.
 
+0.07 (to be released)
+	- fixed some errors in the BibTeX-related documentation (ZENOG)
+
 0.06 2009.07.23
 
 	- Fixing #45512: broken test by silencing the warnings

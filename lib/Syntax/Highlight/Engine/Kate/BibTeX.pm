@@ -216,7 +216,7 @@ Syntax::Highlight::Engine::Kate::BibTeX - a Plugin for BibTeX syntax highlightin
 =head1 DESCRIPTION
 
 Syntax::Highlight::Engine::Kate::BibTeX is a  plugin module that provides syntax highlighting
-for BibTeX to the Syntax::Haghlight::Engine::Kate highlighting engine.
+for BibTeX to the Syntax::Highlight::Engine::Kate highlighting engine.
 
 This code is generated from the syntax definition files used
 by the Kate project.
