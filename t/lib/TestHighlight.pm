@@ -6,6 +6,7 @@ use File::Spec::Functions 'catfile';
 use Exporter 'import';
 our @EXPORT_OK = qw(
   get_highlighter
+  highlight_perl
   slurp
   get_sample_perl_files
 );
@@ -50,6 +51,11 @@ See F<t/perl_highlighting.t> for an example of testing with this.
 =back
 
 =cut
+
+sub highlight_perl {
+    my $code = shift;
+    return get_highlighter('Perl')->highlightText($code);
+}
 
 sub get_highlighter {
     my $syntax = shift || 'Perl';
