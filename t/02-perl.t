@@ -16,4 +16,3 @@ foreach my $language (@languages) {
     );
     isa_ok($hl, 'Syntax::Highlight::Engine::Kate');
 }
-
