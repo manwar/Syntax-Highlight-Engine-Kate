@@ -17,6 +17,6 @@ test_requires  'Term::ANSIColor'          => '0';
 no_index       'directory'                => qw{ t xt eg share inc privinc };
 homepage       'http://padre.perlide.org/';
 #bugtracker     'http://padre.perlide.org/';
-repository     'http://svn.perlide.org/padre/trunk/Syntax-Highlight-Engine-Kate/';
+repository     'https://github.com/szabgab/Syntax-Highlight-Engine-Kate';
 
 WriteAll;
