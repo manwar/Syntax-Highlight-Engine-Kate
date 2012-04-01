@@ -12,6 +12,7 @@ requires       'Data::Dumper'             => '0';
 requires       'File::Basename'           => '0';
 
 test_requires  'Test::More'               => '0.88';
+test_requires  'Test::Differences'        => '0.61';
 test_requires  'Term::ANSIColor'          => '0';
 
 no_index       'directory'                => qw{ t xt eg share inc privinc };
