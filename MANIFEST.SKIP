@@ -3,7 +3,9 @@
 \bCVS\b
 ,v$
 \B\.svn\b
+\B\.git\b
 \B\.cvsignore$
+\B\.gitignore$
 
 # Avoid Makemaker generated and utility files.
 \bMakefile$
@@ -29,6 +31,7 @@
 \#$
 \.#
 \.rej$
+\.swp$
 
 # Avoid OS-specific files/dirs
 #   Mac OSX metadata
