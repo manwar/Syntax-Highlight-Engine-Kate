@@ -22,4 +22,3 @@ while (@hl) {
 	print "'$string'    '$type'\n";
 
 }
-
