@@ -5,7 +5,7 @@
 
 package Syntax::Highlight::Engine::Kate::All;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use Syntax::Highlight::Engine::Kate::AHDL;
 use Syntax::Highlight::Engine::Kate::ANSI_C89;

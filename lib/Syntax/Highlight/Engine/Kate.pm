@@ -6,7 +6,7 @@
 package Syntax::Highlight::Engine::Kate;
 
 use 5.006;
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 use strict;
 use warnings;
 use Carp;

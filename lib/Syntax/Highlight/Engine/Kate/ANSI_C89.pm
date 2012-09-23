@@ -12,7 +12,7 @@
 
 package Syntax::Highlight::Engine::Kate::ANSI_C89;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use strict;
 use warnings;
