@@ -2,6 +2,7 @@ Revision history for Perl extension Syntax::Highlight::Engine::Kate.
 
 0.07 (to be released)
 	- fixed some errors in the BibTeX-related documentation (ZENOG)
+	- revisited conversion of Kate's highlight definitions (Jan Pokorny)
 
 0.06 2009.07.23
 
@@ -20,7 +21,7 @@ Revision history for Perl extension Syntax::Highlight::Engine::Kate.
 0.03 Sun Feb 3 2008
 
 	- Fixed countless errors.
-	- Added support for Ansys, Apache Configuration, Email, FreeBASIC, Kate File Template, 
+	- Added support for Ansys, Apache Configuration, Email, FreeBASIC, Kate File Template,
 	  de_DE, en_EN, nl, M3U, Wikimedia, x.org Configuration
 	- No more 16 Mb output at make test
 
@@ -28,13 +29,13 @@ Revision history for Perl extension Syntax::Highlight::Engine::Kate.
 
 	- Fixed bug in Perl with the q' ' construct.
 	- Fixed bug in Template where testDetectSpaces would include a newline.
-	- Moved all highlighting Methods from Kate to Template, so plugins can now 
+	- Moved all highlighting Methods from Kate to Template, so plugins can now
 	  function standalone.
 	- Fixed reset, it did not work properly if Kate was screwed up by bugs, now it does.
 	- Updated documentation.
-	- Fixed startup penalty for Kate. Kate does not load all plugins at atartup, but 
+	- Fixed startup penalty for Kate. Kate does not load all plugins at atartup, but
 	  searches for them programmatically.
-	- Rewrote testing, Windows OS should now be able to cope with the length of the 
+	- Rewrote testing, Windows OS should now be able to cope with the length of the
 	  test-harness commandline.
 	- Optimized testmethods in Template, gained some speed.
 

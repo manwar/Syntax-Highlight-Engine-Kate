@@ -2,14 +2,14 @@
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 
-package Syntax::Highlight::Engine::Kate::ToolKit;
+package Syntax::Highlight::Engine::Kate::Convert::ToolKit;
 
 our $VERSION = '0.06';
 
 use strict;
 use warnings;
 use XML::Dumper;
-require Syntax::Highlight::Engine::Kate::XMLData;
+require Syntax::Highlight::Engine::Kate::Convert::XMLData;
 
 use File::Basename;
 
@@ -79,7 +79,7 @@ my %testopts = (
 sub new {
 	my $proto = shift;
 	my $class = ref($proto) || $proto;
-	
+
 	my $self = {
 		indent => 0,
 		indentchar => '   ',
@@ -127,7 +127,7 @@ sub checkIntegrity {
 				my $itl = $ctx->{$k}->{'items'};
 				$self->testContextItems(@$itl);
 				$self->indentDown;
-			}		
+			}
 		} else {
 			$self->log("could not retrieve data for $lang");
 		}
@@ -363,7 +363,7 @@ sub pmGenerate {
 		}
 		$self->indentDown;
 		$self->lprint("});");
-		
+
 		my $deliminators = ".():!+,-<=>%&*/;?[]^{|}~\\";
 		my $wdelim = $xml->weakDeliminator;
 		while ($wdelim ne '') {
@@ -397,7 +397,7 @@ sub pmGenerate {
 		$self->indentDown;
 		$self->lprint("}");
 		$self->lprint;
-		
+
 		foreach my $ctxt (sort keys %contexts) {
 			$self->curcontext($ctxt);
 			$self->lprint("sub " . $self->pmMethodName($ctxt) . " {");
@@ -413,7 +413,7 @@ sub pmGenerate {
 			$self->lprint("};");
 			$self->lprint;
 		}
-		
+
 		$self->lprint;
 		$self->lprint("1;");
 		$self->lprint;
@@ -704,7 +704,7 @@ sub policy {
 sub register {
 	my ($self, $new) = @_;
 	my $reg = $self->{'registered'};
-	my $k = new Syntax::Highlight::Engine::Kate::XMLData($new);
+	my $k = new Syntax::Highlight::Engine::Kate::Convert::XMLData($new);
 	if (defined($k)) {
 		my $name = $k->language->{'name'};
 		if (exists $reg->{$name}) {
@@ -1086,4 +1086,31 @@ sub xmldata {
 	}
 }
 
+
 1;
+
+__END__
+
+=head1 NAME
+
+Syntax::Highlight::Engine::Kate::Convert::ToolKit - helper routines,
+especially for generating highlight definitions from Kate's originals.
+
+=head1 SYNOPSIS
+
+  use Syntax::Highlight::Engine::Kate::Convert::ToolKit;
+
+  $hlfile = "/some/path/some-lang.xml";
+  $toolkit = new Syntax::Highlight::Engine::Kate::Convert::ToolKit();
+  # $toolkit->outcmd = sub { ... };  # optionally redefine bare output
+  $outfile = $toolkit->register($hlfile);
+  $toolkit->pmGenerate($outfile);
+
+=head1 DESCRIPTION
+
+ToolKit module carries helper routines, notably conversion from native
+highlight definitions of Kate to the ones as used by
+Syntax::Highlight::Engine::Kate.
+
+For convenience, such conversion process is wrapped into provided
+C<hl-kate-convert> script.
