@@ -1,5 +1,10 @@
 Revision history for Perl extension Syntax::Highlight::Engine::Kate.
 
+0.08 2013.05.27
+    - Add stub files Syntax::Highlight::Engine::Kate::BaseTest and
+      Syntax::Highlight::Engine::Kate::BaseTestchild to kick the old
+      ones out of the PAUSE index. #85463
+
 0.07 2012.09.23
 	- fixed some errors in the BibTeX-related documentation (ZENOG)
 	- revisited conversion of Kate's highlight definitions (Jan Pokorny)
