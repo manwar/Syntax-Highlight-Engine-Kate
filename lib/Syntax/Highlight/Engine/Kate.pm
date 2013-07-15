@@ -622,7 +622,7 @@ sub languagePlug {
 		if (defined($insensitive) && $insensitive) {
 			my $matched = 0;
 			foreach my $key (keys(%{$self->{'syntaxes'}})) {
-				if ($key =~ /^$req$/i) {
+				if (lc($key) eq lc($req)) {
 					warn "substituting language $key for $req";
 					$req = $key;
 					$matched = 1;
