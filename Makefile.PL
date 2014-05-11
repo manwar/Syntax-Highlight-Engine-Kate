@@ -8,6 +8,7 @@ all_from       'lib/Syntax/Highlight/Engine/Kate.pm';
 
 requires       'perl'                     => '5.006';
 requires       'Carp'                     => '0';
+requires       'Path::Tiny'               => '0';
 requires       'Data::Dumper'             => '0';
 requires       'File::Basename'           => '0';
 
