@@ -3,7 +3,7 @@ use strict;
 use warnings FATAL => 'all';
 
 use Data::Dumper;
-use File::Slurp qw(slurp);
+use Path::Tiny;
 use Syntax::Highlight::Engine::Kate::All;
 use Syntax::Highlight::Engine::Kate;
 
@@ -11,7 +11,7 @@ my $kate = Syntax::Highlight::Engine::Kate->new(
 	language => 'Perl',
 );
 
-my $text = slurp(shift);
+my $text = path(shift)->slurp;
 my @hl = $kate->highlight($text);
 print "==\n";
 #print Dumper \@hl;
