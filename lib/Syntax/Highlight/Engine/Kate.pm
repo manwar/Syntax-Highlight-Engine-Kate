@@ -6,7 +6,7 @@
 package Syntax::Highlight::Engine::Kate;
 
 use 5.006;
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 use strict;
 use warnings;
 use Carp qw(carp croak);
