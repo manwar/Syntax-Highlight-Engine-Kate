@@ -1,5 +1,11 @@
 Revision history for Perl extension Syntax::Highlight::Engine::Kate.
 
+
+0.09 
+    - Support case insensitive names. RT #84982 (Jeff Fearn)
+    - Replace use of File::Slurp with Path::Tiny (Martin McGrath)
+    - Spelling RT #88156 (Debian)
+
 0.08 2013.05.27
     - Add stub files Syntax::Highlight::Engine::Kate::BaseTest and
       Syntax::Highlight::Engine::Kate::BaseTestchild to kick the old
