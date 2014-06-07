@@ -20,6 +20,7 @@ for my $perl ( sort keys %$highlighted_version_of ) {
     my $highlighted = $highlighted_version_of->{$perl};
     my $have        = get_highlighter('Perl')->highlightText( slurp($perl) );
     my $want        = slurp($highlighted);
+	chomp $want;
 
     eq_or_diff $have, $want, "($perl) was highlighted correctly";
 }
