@@ -773,7 +773,7 @@ If you created your own language plugins you may specify a list of them with thi
 
 =item B<format_table>
 
-This option must be specified if the B<highlightText> method needs to do anything usefull for you.
+This option must be specified if the B<highlightText> method needs to do anything useful for you.
 All mentioned keys in the synopsis must be specified.
 
 

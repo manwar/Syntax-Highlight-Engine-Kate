@@ -773,7 +773,7 @@
 </comment><comment>
 </comment><comment>=item B<format_table></comment><comment>
 </comment><comment>
-</comment><comment>This option must be specified if the B<highlightText> method needs to do anything usefull for you.</comment><comment>
+</comment><comment>This option must be specified if the B<highlightText> method needs to do anything useful for you.</comment><comment>
 </comment><comment>All mentioned keys in the synopsis must be specified.</comment><comment>
 </comment><comment>
 </comment><comment>
