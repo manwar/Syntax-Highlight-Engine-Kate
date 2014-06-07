@@ -12,7 +12,8 @@ requires       'Path::Tiny'               => '0';
 requires       'Data::Dumper'             => '0';
 requires       'File::Basename'           => '0';
 
-test_requires  'Test::More'               => '0.88';
+test_requires  'Test::More'               => '1.00';
+test_requires  'Test::Warn'               => '0.30';
 test_requires  'Test::Differences'        => '0.61';
 test_requires  'Term::ANSIColor'          => '0';
 

@@ -9,7 +9,7 @@ use 5.006;
 our $VERSION = '0.08';
 use strict;
 use warnings;
-use Carp;
+use Carp qw(carp);
 use Data::Dumper;
 use File::Basename;
 
@@ -623,7 +623,7 @@ sub languagePlug {
 			my $matched = 0;
 			foreach my $key (keys(%{$self->{'syntaxes'}})) {
 				if (lc($key) eq lc($req)) {
-					warn "substituting language $key for $req";
+					carp "substituting language $key for $req";
 					$req = $key;
 					$matched = 1;
 					last;
@@ -631,11 +631,11 @@ sub languagePlug {
 			}
 
 			unless ($matched) {
-				warn "undefined language: $req";
+				carp "undefined language: $req";
 				return undef;
 			}
 		} else {
-			warn "undefined language: $req";
+			carp "undefined language: $req";
 			return undef;
 		}
 	}
