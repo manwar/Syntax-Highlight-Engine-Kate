@@ -506,7 +506,7 @@ sub pluginGet {
 		if (defined($plug)) {
 			$plugs->{$language} = $plug;
 		} else {
-			$self->logwarning("cannot create plugin for language '$language'\n$@");
+			$self->logwarning("cannot create plugin for language '$language'\n--------------\n$@");
 		}
 	}
 	if (exists($plugs->{$language})) {

@@ -9,7 +9,7 @@ use 5.006;
 our $VERSION = '0.08';
 use strict;
 use warnings;
-use Carp qw(carp);
+use Carp qw(carp croak);
 use Data::Dumper;
 use File::Basename;
 
@@ -631,11 +631,11 @@ sub languagePlug {
 			}
 
 			unless ($matched) {
-				carp "undefined language: $req";
+				carp "undefined language: '$req'";
 				return undef;
 			}
 		} else {
-			carp "undefined language: $req";
+			carp "undefined language: '$req'";
 			return undef;
 		}
 	}
@@ -650,6 +650,9 @@ sub reset {
 		$self->stack([]);
 	} else {
 		my $plug	= $self->pluginGet($lang);
+		if (not $plug) {
+			croak "Plugin for language '$lang' could not be found.";
+		}
 		my $basecontext = $plug->basecontext;
 		$self->stack([
 			[$plug, $basecontext]

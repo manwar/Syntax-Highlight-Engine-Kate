@@ -12,7 +12,7 @@ is($hl->languagePlug( 'HTML'), 'HTML', 'Standard "HTML" should work');
 subtest html => sub { 
 	plan tests => 2;
 	my $lang;
-	warning_is { $lang = $hl->languagePlug( 'html') } 'undefined language: html', 'warn';
+	warning_is { $lang = $hl->languagePlug( 'html') } q{undefined language: 'html'}, 'warn';
 	is($lang, undef, 'Standard "html" should not work');
 };
 
