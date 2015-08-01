@@ -725,7 +725,7 @@ Syntax::Highlight::Engine::Kate - a port to Perl of the syntax highlight engine 
 
  #or
 
- my $hl = new Syntax::Highlight::Engine::Kate::Perl(
+ my $hl = Syntax::Highlight::Engine::Kate::Perl->new(
     substitutions => {
        "<" => "&lt;",
        ">" => "&gt;",
