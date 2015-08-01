@@ -12,7 +12,7 @@
 
 package Syntax::Highlight::Engine::Kate::PHP_HTML;
 
-our $VERSION = '0.07';
+our $VERSION = '0.10';
 
 use strict;
 use warnings;

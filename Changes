@@ -1,5 +1,8 @@
 Revision history for Perl extension Syntax::Highlight::Engine::Kate.
 
+0.10 2015.08.01
+    - Documentation cleanup (Andy Jack)
+
 
 0.09 2014.06.07
     - Require Test::Warn for testing.

@@ -1,6 +1,6 @@
 package Syntax::Highlight::Engine::Kate::BaseTestchild;
 
-our $VERSION = '0.07';
+our $VERSION = '0.10';
 
 use strict;
 use warnings;
