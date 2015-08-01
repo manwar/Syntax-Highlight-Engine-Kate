@@ -770,7 +770,7 @@ Syntax::Highlight::Engine::Kate - a port to Perl of the syntax highlight engine 
 Syntax::Highlight::Engine::Kate is a port to perl of the syntax highlight engine of the
 Kate text editor.
 
-The language xml files of kate have been rewritten to perl modules using a script. These modules
+The language XML files of Kate have been rewritten to perl modules using a script. These modules
 function as plugins to this module.
 
 Syntax::Highlight::Engine::Kate inherits Syntax::Highlight::Engine::Kate::Template.
@@ -844,7 +844,7 @@ Returns a reference to the sections hash.
 
 =head1 ATTRIBUTES
 
-In the kate XML syntax files you find under the section B<<itemDatas>> entries like
+In the Kate XML syntax files you find under the section B<<itemDatas>> entries like
 <itemData name="Unknown Property"  defStyleNum="dsError" italic="1"/>. Kate is an editor
 so it is ok to have definitions for forground and background colors and so on. However,
 since this Module is supposed to be a more universal highlight engine, the attributes need
@@ -1008,8 +1008,8 @@ likely to be found there.
 
 =head1 TO DO
 
-Rebuild the scripts i am using to generate the modules from xml files so they are more pro-actively tracking
-flaws in the build of the xml files like missing lists. Also regular expressions in the xml can be tested better
+Rebuild the scripts i am using to generate the modules from XML files so they are more pro-actively tracking
+flaws in the build of the XML files like missing lists. Also regular expressions in the XML can be tested better
 before used in plugins.
 
 Refine the testmethods in Syntax::Highlight::Engine::Kate::Template, so that choices for casesensitivity,
@@ -1019,7 +1019,7 @@ Implement codefolding.
 
 =head1 ACKNOWLEDGEMENTS
 
-All the people who wrote Kate and the syntax highlight xml files.
+All the people who wrote Kate and the syntax highlight XML files.
 
 =head1 AUTHOR AND COPYRIGHT
 
