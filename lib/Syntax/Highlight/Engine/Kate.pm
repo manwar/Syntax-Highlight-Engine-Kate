@@ -681,7 +681,7 @@ __END__
 
 =head1 NAME
 
-Syntax::Highlight::Engine::Kate - a port to Perl of the syntax highlight engine of the Kate texteditor.
+Syntax::Highlight::Engine::Kate - a port to Perl of the syntax highlight engine of the Kate text editor.
 
 =head1 SYNOPSIS
 
@@ -742,13 +742,13 @@ Syntax::Highlight::Engine::Kate - a port to Perl of the syntax highlight engine 
 
 =head1 DESCRIPTION
 
-Syntax::Highlight::Engine::Kate is a port to perl of the syntax highlight engine of the
+Syntax::Highlight::Engine::Kate is a port to Perl of the syntax highlight engine of the
 Kate text editor.
 
-The language XML files of Kate have been rewritten to perl modules using a script. These modules
+The language XML files of Kate have been rewritten to Perl modules using a script. These modules
 function as plugins to this module.
 
-Syntax::Highlight::Engine::Kate inherits Syntax::Highlight::Engine::Kate::Template.
+Syntax::Highlight::Engine::Kate inherits L<Syntax::Highlight::Engine::Kate::Template>.
 
 =head1 OPTIONS
 
@@ -756,8 +756,7 @@ Syntax::Highlight::Engine::Kate inherits Syntax::Highlight::Engine::Kate::Templa
 
 =item B<language>
 
-Specify the language you want highlighted.
-look in the B<PLUGINS> section for supported languages.
+Specify the language you want highlighted. Look in the B<PLUGINS> section for supported languages.
 
 =item B<plugins>
 
@@ -785,31 +784,31 @@ With this option you can specify additional formatting options.
 
 =item B<extensions>
 
-returns a reference to the extensions hash,
+Returns a reference to the extensions hash.
 
 =item B<language>(I<?$language?>)
 
-Sets and returns the current language that is highlighted. when setting the language a reset is also done.
+Sets and returns the current language that is highlighted. When setting the language a reset is also done.
 
-=item B<languageAutoSet>(I<$filename>);
+=item B<languageAutoSet>(I<$filename>)
 
-Suggests language name for the fiven file B<$filename>
+Suggests language name for the given file B<$filename>.
 
 =item B<languageList>
 
-returns a list of languages for which plugins have been defined.
+Returns a list of languages for which plugins have been defined.
 
-=item B<languagePlug>(I<$language>, I<?$insensitive?>);
+=item B<languagePlug>(I<$language>, I<?$insensitive?>)
 
 Returns the module name of the plugin for B<$language>.
 
 If B<$insensitive> is set it will also try to match names ignoring case and return the correct module name of the plugin.
 
-e.g. $highlighter->languagePlug('HtMl', 1); will return 'HTML'.
+e.g. C<< $highlighter->languagePlug('HtMl', 1); >> will return C<< HTML >>.
 
-=item B<languagePropose>(I<$filename>);
+=item B<languagePropose>(I<$filename>)
 
-Suggests language name for the fiven file B<$filename>
+Suggests language name for the given file B<$filename>.
 
 =item B<sections>
 
@@ -820,22 +819,70 @@ Returns a reference to the sections hash.
 =head1 ATTRIBUTES
 
 In the Kate XML syntax files you find under the section B<<itemDatas>> entries like
-<itemData name="Unknown Property"  defStyleNum="dsError" italic="1"/>. Kate is an editor
-so it is ok to have definitions for forground and background colors and so on. However,
-since this Module is supposed to be a more universal highlight engine, the attributes need
+C<< <itemData name="Unknown Property" defStyleNum="dsError" italic="1"/> >>. Kate is an editor
+so it is ok to have definitions for foreground and background colors and so on. However,
+since this module is supposed to be a more universal highlight engine, the attributes need
 to be fully abstract. In which case, Kate does not have enough default attributes defined
-to fullfill all needs. Kate defines the following standard attributes: B<dsNormal>, B<dsKeyword>,
-B<dsDataType>, B<dsDecVal>, B<dsBaseN>, B<dsFloat>, B<dsChar>, B<dsString>, B<dsComment>, B<dsOthers>,
-B<dsAlert>, B<dsFunction>, B<dsRegionMarker>, B<dsError>. This module leaves out the "ds" part and uses
-following additional attributes: B<BString>, B<IString>, B<Operator>, B<Reserved>, B<Variable>. I have
-modified the XML files so that each highlight mode would get it's own attribute. In quite a few cases
-still not enough attributes were defined. So in some languages different modes have the same attribute.
+to fulfill all needs. Kate defines the following standard attributes:
+
+=over 4
+
+=item * B<dsNormal>
+
+=item * B<dsKeyword>
+
+=item * B<dsDataType>
+
+=item * B<dsDecVal>
+
+=item * B<dsBaseN>
+
+=item * B<dsFloat>
+
+=item * B<dsChar>
+
+=item * B<dsString>
+
+=item * B<dsComment>
+
+=item * B<dsOthers>
+
+=item * B<dsAlert>
+
+=item * B<dsFunction>
+
+=item * B<dsRegionMarker>
+
+=item * B<dsError>
+
+=back
+
+This module leaves out the B<<ds>> part and uses following additional attributes:
+
+=over 4
+
+=item * B<BString>
+
+=item * B<IString>
+
+=item * B<Operator>
+
+=item * B<Reserved>
+
+=item * B<Variable>
+
+=back
+
+I have modified the XML files so that each highlight mode would get its own
+attribute. In quite a few cases still not enough attributes were defined. So in
+some languages different modes have the same attribute.
 
 =head1 PLUGINS
 
-Below an overview of existing plugins. All have been tested on use and can be created. The ones for which no samplefile
-is available are marked. Those marked OK have highlighted the testfile without appearant mistakes. This does
-not mean that all bugs are shaken out.
+Below is an overview of existing plugins. All have been tested on use and can be
+created. The ones for which no sample file is available are marked. Those marked
+OK have highlighted the test file without apparent mistakes. This does not mean
+that all bugs are shaken out.
 
  LANGUAGE             MODULE                   COMMENT
  ********             ******                   ******
@@ -966,15 +1013,14 @@ not mean that all bugs are shaken out.
  xslt                 Xslt                     No sample file
  yacas                Yacas                    No sample file
 
-
 =head1 BUGS
 
 Float is detected differently than in the Kate editor.
 
 The regular expression engine of the Kate editor, qregexp, appears to be more tolerant to mistakes
-in regular expressions than perl. This might lead to error messages and differences in behaviour.
+in regular expressions than Perl. This might lead to error messages and differences in behaviour.
 Most of the problems were sorted out while developing, because error messages appeared. For as far
-as differences in behaviour is concerned, testing is the only way to find out, so i hope the users
+as differences in behaviour is concerned, testing is the only way to find out, so I hope the users
 out there will be able to tell me more.
 
 This module is mimicking the behaviour of the syntax highlight engine of the Kate editor. If you find
@@ -983,14 +1029,14 @@ likely to be found there.
 
 =head1 TO DO
 
-Rebuild the scripts i am using to generate the modules from XML files so they are more pro-actively tracking
+Rebuild the scripts I am using to generate the modules from XML files so they are more pro-actively tracking
 flaws in the build of the XML files like missing lists. Also regular expressions in the XML can be tested better
-before used in plugins.
+before they are used in plugins.
 
-Refine the testmethods in Syntax::Highlight::Engine::Kate::Template, so that choices for casesensitivity,
+Refine the test methods in L<Syntax::Highlight::Engine::Kate::Template>, so that choices for case sensitivity,
 dynamic behaviour and lookahead can be determined at generate time of the plugin, might increase throughput.
 
-Implement codefolding.
+Implement code folding.
 
 =head1 ACKNOWLEDGEMENTS
 
@@ -1009,6 +1055,12 @@ as Perl itself.
 
 =head1 SEE ALSO
 
-Syntax::Highlight::Engine::Kate::Template http:://www.kate-editor.org
+=over 4
+
+=item * L<Syntax::Highlight::Engine::Kate::Template>
+
+=item * L<http://www.kate-editor.org>
+
+=back
 
 =cut
