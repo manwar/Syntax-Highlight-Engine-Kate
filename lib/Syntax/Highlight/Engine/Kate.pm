@@ -784,8 +784,6 @@ Syntax::Highlight::Engine::Kate inherits Syntax::Highlight::Engine::Kate::Templa
 Specify the language you want highlighted.
 look in the B<PLUGINS> section for supported languages.
 
-
-
 =item B<plugins>
 
 If you created your own language plugins you may specify a list of them with this option.
@@ -800,11 +798,9 @@ If you created your own language plugins you may specify a list of them with thi
 This option must be specified if the B<highlightText> method needs to do anything useful for you.
 All mentioned keys in the synopsis must be specified.
 
-
 =item B<substitutions>
 
 With this option you can specify additional formatting options.
-
 
 =back
 
@@ -1041,4 +1037,3 @@ as Perl itself.
 Syntax::Highlight::Engine::Kate::Template http:://www.kate-editor.org
 
 =cut
-
