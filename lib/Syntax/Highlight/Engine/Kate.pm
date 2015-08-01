@@ -735,8 +735,8 @@ Syntax::Highlight::Engine::Kate - a port to Perl of the syntax highlight engine 
  );
 
  print "<html>\n<head>\n</head>\n<body>\n";
- while (my $in = <>) {
-    print $hl->highlightText($in);
+ while ( my $in = <> ) {
+     print $hl->highlightText($in);
  }
  print "</body>\n</html>\n";
 
