@@ -677,6 +677,8 @@ sub syntaxes {
 
 __END__
 
+=pod
+
 =head1 NAME
 
 Syntax::Highlight::Engine::Kate - a port to Perl of the syntax highlight engine of the Kate texteditor.
