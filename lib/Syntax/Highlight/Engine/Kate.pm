@@ -687,7 +687,7 @@ Syntax::Highlight::Engine::Kate - a port to Perl of the syntax highlight engine 
 
  #if you want to create a compiled executable, you may want to do this:
  use Syntax::Highlight::Engine::Kate::All;
- 
+
  use Syntax::Highlight::Engine::Kate;
  my $hl = new Syntax::Highlight::Engine::Kate(
     language => 'Perl',
@@ -722,9 +722,9 @@ Syntax::Highlight::Engine::Kate - a port to Perl of the syntax highlight engine 
        Warning => ["<font color=\"#0000ff\"><b><i>", "</b></i></font>"],
     },
  );
- 
+
  #or
- 
+
  my $hl = new Syntax::Highlight::Engine::Kate::Perl(
     substitutions => {
        "<" => "&lt;",
@@ -757,8 +757,8 @@ Syntax::Highlight::Engine::Kate - a port to Perl of the syntax highlight engine 
        Warning => ["<font color=\"#0000ff\"><b><i>", "</b></i></font>"],
     },
  );
- 
- 
+
+
  print "<html>\n<head>\n</head>\n<body>\n";
  while (my $in = <>) {
     print $hl->highlightText($in);
@@ -767,10 +767,10 @@ Syntax::Highlight::Engine::Kate - a port to Perl of the syntax highlight engine 
 
 =head1 DESCRIPTION
 
-Syntax::Highlight::Engine::Kate is a port to perl of the syntax highlight engine of the 
+Syntax::Highlight::Engine::Kate is a port to perl of the syntax highlight engine of the
 Kate text editor.
 
-The language xml files of kate have been rewritten to perl modules using a script. These modules 
+The language xml files of kate have been rewritten to perl modules using a script. These modules
 function as plugins to this module.
 
 Syntax::Highlight::Engine::Kate inherits Syntax::Highlight::Engine::Kate::Template.
@@ -848,15 +848,15 @@ Returns a reference to the sections hash.
 
 =head1 ATTRIBUTES
 
-In the kate XML syntax files you find under the section B<<itemDatas>> entries like 
+In the kate XML syntax files you find under the section B<<itemDatas>> entries like
 <itemData name="Unknown Property"  defStyleNum="dsError" italic="1"/>. Kate is an editor
-so it is ok to have definitions for forground and background colors and so on. However, 
+so it is ok to have definitions for forground and background colors and so on. However,
 since this Module is supposed to be a more universal highlight engine, the attributes need
 to be fully abstract. In which case, Kate does not have enough default attributes defined
-to fullfill all needs. Kate defines the following standard attributes: B<dsNormal>, B<dsKeyword>, 
-B<dsDataType>, B<dsDecVal>, B<dsBaseN>, B<dsFloat>, B<dsChar>, B<dsString>, B<dsComment>, B<dsOthers>, 
-B<dsAlert>, B<dsFunction>, B<dsRegionMarker>, B<dsError>. This module leaves out the "ds" part and uses 
-following additional attributes: B<BString>, B<IString>, B<Operator>, B<Reserved>, B<Variable>. I have 
+to fullfill all needs. Kate defines the following standard attributes: B<dsNormal>, B<dsKeyword>,
+B<dsDataType>, B<dsDecVal>, B<dsBaseN>, B<dsFloat>, B<dsChar>, B<dsString>, B<dsComment>, B<dsOthers>,
+B<dsAlert>, B<dsFunction>, B<dsRegionMarker>, B<dsError>. This module leaves out the "ds" part and uses
+following additional attributes: B<BString>, B<IString>, B<Operator>, B<Reserved>, B<Variable>. I have
 modified the XML files so that each highlight mode would get it's own attribute. In quite a few cases
 still not enough attributes were defined. So in some languages different modes have the same attribute.
 
@@ -864,7 +864,7 @@ still not enough attributes were defined. So in some languages different modes h
 
 Below an overview of existing plugins. All have been tested on use and can be created. The ones for which no samplefile
 is available are marked. Those marked OK have highlighted the testfile without appearant mistakes. This does
-not mean that all bugs are shaken out. 
+not mean that all bugs are shaken out.
 
  LANGUAGE             MODULE                   COMMENT
  ********             ******                   ******
@@ -1001,7 +1001,7 @@ not mean that all bugs are shaken out.
 Float is detected differently than in the Kate editor.
 
 The regular expression engine of the Kate editor, qregexp, appears to be more tolerant to mistakes
-in regular expressions than perl. This might lead to error messages and differences in behaviour. 
+in regular expressions than perl. This might lead to error messages and differences in behaviour.
 Most of the problems were sorted out while developing, because error messages appeared. For as far
 as differences in behaviour is concerned, testing is the only way to find out, so i hope the users
 out there will be able to tell me more.
@@ -1013,10 +1013,10 @@ likely to be found there.
 =head1 TO DO
 
 Rebuild the scripts i am using to generate the modules from xml files so they are more pro-actively tracking
-flaws in the build of the xml files like missing lists. Also regular expressions in the xml can be tested better 
+flaws in the build of the xml files like missing lists. Also regular expressions in the xml can be tested better
 before used in plugins.
 
-Refine the testmethods in Syntax::Highlight::Engine::Kate::Template, so that choices for casesensitivity, 
+Refine the testmethods in Syntax::Highlight::Engine::Kate::Template, so that choices for casesensitivity,
 dynamic behaviour and lookahead can be determined at generate time of the plugin, might increase throughput.
 
 Implement codefolding.
@@ -1033,8 +1033,8 @@ Hans Jeuken < haje at toneel dot demon dot nl >
 
 Copyright (c) 2006 by Hans Jeuken, all rights reserved.
 
-You may freely distribute and/or modify this module under the same terms 
-as Perl itself. 
+You may freely distribute and/or modify this module under the same terms
+as Perl itself.
 
 =head1 SEE ALSO
 
