@@ -1013,6 +1013,10 @@ that all bugs are shaken out.
  xslt                 Xslt                     No sample file
  yacas                Yacas                    No sample file
 
+Module L<Syntax::Highlight::Engine::Kate::Convert::ToolKit> and script
+L<hl-kate-convert> can be used to convert existing Kate/KTextEditor Syntax
+Highlighting file from XML format to Perl.
+
 =head1 BUGS
 
 Float is detected differently than in the Kate editor.
@@ -1060,6 +1064,8 @@ as Perl itself.
 =item * L<Syntax::Highlight::Engine::Kate::Template>
 
 =item * L<http://www.kate-editor.org>
+
+=item * L<KTextEditor Syntax Highlighting Repository|https://quickgit.kde.org/?p=ktexteditor.git&a=tree&f=src%2Fsyntax%2Fdata>
 
 =back
 
