@@ -7,6 +7,9 @@ package Syntax::Highlight::Engine::Kate::All;
 
 our $VERSION = '0.10';
 
+use strict;
+use warnings;
+
 use Syntax::Highlight::Engine::Kate::AHDL;
 use Syntax::Highlight::Engine::Kate::ANSI_C89;
 use Syntax::Highlight::Engine::Kate::ASP;
