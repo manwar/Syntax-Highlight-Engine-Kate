@@ -496,7 +496,11 @@ sub pluginGet {
 	my ($self, $language) = @_;
 	my $plugs = $self->{'plugins'};
 	unless (exists($plugs->{$language})) {
-		my $modname = 'Syntax::Highlight::Engine::Kate::' . $self->languagePlug($language);
+                my $lang_plug = $self->languagePlug($language);
+		my $modname = 'Syntax::Highlight::Engine::Kate::';
+                if (defined $lang_plug) {
+	               $modname .= $lang_plug;
+                }
 		unless (defined($modname)) {
 			$self->logwarning("no valid module found for language '$language'");
 			return undef;
