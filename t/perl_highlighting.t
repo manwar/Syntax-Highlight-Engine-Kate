@@ -40,6 +40,8 @@ my $want = <<'END';
 </comment><comment>All Perl code after this was considered a "comment" and Kate could not</comment><comment>
 </comment><comment>highlight it correctly.</comment><comment>
 </comment><comment>
+</comment><comment>=cutabove</comment><comment>
+</comment><comment>
 </comment><comment>=cut</comment><normal>
 </normal><normal>
 </normal><keyword>my</keyword><normal> </normal><datatype>$this_is_not_a_comment</datatype><normal> = </normal><operator>'</operator><string>or a pipe</string><operator>'</operator><normal>;</normal><normal>
@@ -59,6 +61,8 @@ __DATA__
 
 All Perl code after this was considered a "comment" and Kate could not
 highlight it correctly.
+
+=cutabove
 
 =cut
 
