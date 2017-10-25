@@ -1925,7 +1925,7 @@ sub parsepod {
    # context => '#pop'
    # endRegion => 'POD'
    # type => 'RegExpr'
-   if ($self->testRegExpr($text, '\\=cut.*$', 0, 0, 0, 0, 0, '#pop', 'Pod')) {
+   if ($self->testRegExpr($text, '\\=cut.*', 0, 0, 0, 0, 0, '#pop', 'Pod')) {
       return 1
    }
    return 0;
