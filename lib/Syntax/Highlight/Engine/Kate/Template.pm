@@ -963,7 +963,7 @@ Returns the $num'th element that was captured in the current context.
 If B<$mode> is specified, B<$string> should only be one character long and numeric.
 B<capturedParse> will return the Nth captured element of the current context.
 
-If B<$mode> is not specified, all occurences of %[1-9] will be replaced by the captured
+If B<$mode> is not specified, all occurrences of %[1-9] will be replaced by the captured
 element of the current context.
 
 =item B<column>
@@ -1009,7 +1009,7 @@ sets and returns the instance variable B<format_table>. See also the option B<fo
 =item B<highlight>(I<$text>);
 
 highlights I<$text>. It does so by selecting the proper callback
-from the B<commands> hash and invoke it. It will do so untill
+from the B<commands> hash and invoke it. It will do so until
 $text has been reduced to an empty string. returns a paired list
 of snippets of text and the attribute with which they should be 
 highlighted.
