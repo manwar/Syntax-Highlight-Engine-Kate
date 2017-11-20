@@ -5,14 +5,14 @@ author:
 build_requires:
   ExtUtils::MakeMaker: 6.59
   Term::ANSIColor: 0
-  Test::Differences: 0.61
-  Test::More: 1.00
-  Test::Warn: 0.30
+  Test::Differences: '0.61'
+  Test::More: '1.00'
+  Test::Warn: '0.30'
 configure_requires:
   ExtUtils::MakeMaker: 6.59
 distribution_type: module
 dynamic_config: 1
-generated_by: 'Module::Install version 1.16'
+generated_by: 'Module::Install version 1.18'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,9 +29,9 @@ requires:
   Data::Dumper: 0
   File::Basename: 0
   Path::Tiny: 0
-  perl: 5.006
+  perl: '5.006'
 resources:
   homepage: http://padre.perlide.org/
   license: http://dev.perl.org/licenses/
   repository: https://github.com/szabgab/Syntax-Highlight-Engine-Kate
-version: 0.12
+version: '0.13'
