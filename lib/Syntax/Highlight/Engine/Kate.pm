@@ -19,12 +19,12 @@ sub new {
 	my $proto = shift;
 	my $class = ref($proto) || $proto;
 	my %args = (@_);
-	
+
 	my $add = delete $args{'plugins'};
 	unless (defined($add)) { $add = [] };
 	my $language = delete $args{'language'};
 	unless (defined($language)) { $language = 'Off' };
-	
+
 	my $self = $class->SUPER::new(%args);
 
 	$self->{'plugins'} = {};
