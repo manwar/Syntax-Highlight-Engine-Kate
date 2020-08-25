@@ -1288,7 +1288,7 @@ sub parseip_string_3 {
    # char1 => '}'
    # context => '#stay'
    # type => 'RangeDetect'
-   if ($self->testRangeDetect($text, '{', '}', 0, 0, undef, 0, '#stay', 'String (interpolated)')) {
+   if ($self->testRangeDetect($text, '\{', '}', 0, 0, undef, 0, '#stay', 'String (interpolated)')) {
       return 1
    }
    # attribute => 'Operator'
