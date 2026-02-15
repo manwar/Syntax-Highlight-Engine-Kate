@@ -27,7 +27,7 @@
 </comment><comment># command returns 0 upon success. See perldoc -f system.</comment><comment>
 </comment><comment># The following line works because $x == $y returns a boolean value.</comment><comment>
 </comment><comment>#use constant CAN_REDRAW => 0 == system(CLEAR);</comment><comment>
-</comment><keyword>use</keyword><normal> </normal><keyword>constant</keyword><normal> CAN_REDRAW => 0;</normal><normal>
+</comment><keyword>use</keyword><normal> </normal><keyword>constant</keyword><normal> CAN_REDRAW => </normal><float>0</float><normal>;</normal><normal>
 </normal><normal>
 </normal><comment># Time in microseconds between screen redraws. See Time::HiRes and the usleep</comment><comment>
 </comment><comment># function</comment><comment>
@@ -41,7 +41,7 @@
 </normal><normal>};</normal><normal>
 </normal><normal>
 </normal><keyword>my</keyword><normal> </normal><datatype>@maze</datatype><normal>;</normal><normal>
-</normal><normal>tunnel( 0, 0, \</normal><datatype>@maze</datatype><normal> );</normal><normal>
+</normal><normal>tunnel( </normal><float>0</float><normal>, </normal><float>0</float><normal>, \</normal><datatype>@maze</datatype><normal> );</normal><normal>
 </normal><keyword>my</keyword><normal> </normal><datatype>$num</datatype><normal> = </normal><float>10</float><normal>_000;</normal><normal>
 </normal><normal>
 </normal><function>system</function><normal>(CLEAR) </normal><keyword>if</keyword><normal> CAN_REDRAW;</normal><normal>
@@ -91,7 +91,7 @@
 </normal><normal>    </normal><keyword>my</keyword><normal> ( </normal><datatype>$x</datatype><normal>, </normal><datatype>$y</datatype><normal>, </normal><datatype>$maze</datatype><normal> ) = </normal><datatype>@_</datatype><normal>;</normal><normal>
 </normal><normal>
 </normal><normal>    </normal><comment># the first two lines return false  if we're out of bounds</comment><comment>
-</comment><normal>    </normal><keyword>return</keyword><normal> </normal><keyword>if</keyword><normal> </normal><datatype>$x</datatype><normal> < 0 </normal><operator>or</operator><normal> </normal><datatype>$y</datatype><normal> < 0;</normal><normal>
+</comment><normal>    </normal><keyword>return</keyword><normal> </normal><keyword>if</keyword><normal> </normal><datatype>$x</datatype><normal> < </normal><float>0</float><normal> </normal><operator>or</operator><normal> </normal><datatype>$y</datatype><normal> < </normal><float>0</float><normal>;</normal><normal>
 </normal><normal>    </normal><keyword>return</keyword><normal> </normal><keyword>if</keyword><normal> </normal><datatype>$x</datatype><normal> > </normal><datatype>$WIDTH</datatype><normal> </normal><operator>-</operator><normal> </normal><float>1</float><normal> </normal><operator>or</operator><normal> </normal><datatype>$y</datatype><normal> > </normal><datatype>$HEIGHT</datatype><normal> </normal><operator>-</operator><normal> </normal><float>1</float><normal>;</normal><normal>
 </normal><normal>
 </normal><normal>    </normal><comment># this returns false if we've already visited this cell</comment><comment>
@@ -107,9 +107,9 @@
 </normal><normal>    </normal><keyword>my</keyword><normal> </normal><datatype>$as_string</datatype><normal> = </normal><operator>"</operator><string>_</string><operator>"</operator><normal> x ( </normal><float>1</float><normal> + </normal><datatype>$WIDTH</datatype><normal> </normal><operator>*</operator><normal> </normal><float>2</float><normal> );</normal><normal>
 </normal><normal>    </normal><datatype>$as_string</datatype><normal> .= </normal><operator>"</operator><char>\n</char><operator>"</operator><normal>;</normal><normal>
 </normal><normal>
-</normal><normal>    </normal><keyword>for</keyword><normal> </normal><keyword>my</keyword><normal> </normal><datatype>$y</datatype><normal> ( 0 .. </normal><datatype>$HEIGHT</datatype><normal> </normal><operator>-</operator><normal> </normal><float>1</float><normal> ) {</normal><normal>
+</normal><normal>    </normal><keyword>for</keyword><normal> </normal><keyword>my</keyword><normal> </normal><datatype>$y</datatype><normal> ( </normal><float>0</float><normal> .. </normal><datatype>$HEIGHT</datatype><normal> </normal><operator>-</operator><normal> </normal><float>1</float><normal> ) {</normal><normal>
 </normal><normal>        </normal><datatype>$as_string</datatype><normal> .= </normal><operator>"</operator><string>|</string><operator>"</operator><normal>;</normal><normal>
-</normal><normal>        </normal><keyword>for</keyword><normal> </normal><keyword>my</keyword><normal> </normal><datatype>$x</datatype><normal> ( 0 .. </normal><datatype>$WIDTH</datatype><normal> </normal><operator>-</operator><normal> </normal><float>1</float><normal> ) {</normal><normal>
+</normal><normal>        </normal><keyword>for</keyword><normal> </normal><keyword>my</keyword><normal> </normal><datatype>$x</datatype><normal> ( </normal><float>0</float><normal> .. </normal><datatype>$WIDTH</datatype><normal> </normal><operator>-</operator><normal> </normal><float>1</float><normal> ) {</normal><normal>
 </normal><normal>            </normal><keyword>my</keyword><normal> </normal><datatype>$cell</datatype><normal> = </normal><datatype>$maze</datatype><normal>->[</normal><datatype>$y</datatype><normal>][</normal><datatype>$x</datatype><normal>];</normal><normal>
 </normal><normal>            </normal><datatype>$as_string</datatype><normal> .= </normal><datatype>$cell</datatype><normal>->{south} ? </normal><operator>"</operator><string> </string><operator>"</operator><normal> : </normal><operator>"</operator><string>_</string><operator>"</operator><normal>;</normal><normal>
 </normal><normal>            </normal><datatype>$as_string</datatype><normal> .= </normal><datatype>$cell</datatype><normal>->{east}  ? </normal><operator>"</operator><string> </string><operator>"</operator><normal> : </normal><operator>"</operator><string>|</string><operator>"</operator><normal>;</normal><normal>

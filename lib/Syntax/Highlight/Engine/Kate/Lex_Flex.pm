@@ -12,7 +12,7 @@
 
 package Syntax::Highlight::Engine::Kate::Lex_Flex;
 
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 
 use strict;
 use warnings;

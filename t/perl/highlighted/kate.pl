@@ -609,7 +609,7 @@
 </normal><normal>		</normal><datatype>$reg</datatype><normal> =~ </normal><operator>s/</operator><others>\*</others><operator>/</operator><string>.*</string><operator>/g</operator><normal>;</normal><normal>
 </normal><normal>		</normal><datatype>$reg</datatype><normal> = </normal><operator>"</operator><datatype>$reg</datatype><string>\$</string><operator>"</operator><normal>;</normal><normal>
 </normal><normal>		</normal><keyword>if</keyword><normal> (</normal><datatype>$file</datatype><normal> =~ </normal><operator>/</operator><datatype>$reg</datatype><operator>/</operator><normal>) {</normal><normal>
-</normal><normal>			</normal><keyword>return</keyword><normal> </normal><datatype>$hsh</datatype><normal>->{</normal><datatype>$key</datatype><normal>}</normal><operator>-</operator><normal>>[0]</normal><normal>
+</normal><normal>			</normal><keyword>return</keyword><normal> </normal><datatype>$hsh</datatype><normal>->{</normal><datatype>$key</datatype><normal>}</normal><operator>-</operator><normal>>[</normal><float>0</float><normal>]</normal><normal>
 </normal><normal>		}</normal><normal>
 </normal><normal>	}</normal><normal>
 </normal><normal>	</normal><keyword>return</keyword><normal> </normal><function>undef</function><normal>;</normal><normal>

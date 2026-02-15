@@ -18,7 +18,7 @@
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>%args</datatype><normal> = (</normal><datatype>@_</datatype><normal>);</normal><normal>
 </normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$debug</datatype><normal> = </normal><function>delete</function><normal> </normal><datatype>$args</datatype><normal>{</normal><operator>'</operator><string>debug</string><operator>'</operator><normal>};</normal><normal>
-</normal><normal>	</normal><keyword>unless</keyword><normal> (</normal><function>defined</function><normal>(</normal><datatype>$debug</datatype><normal>)) { </normal><datatype>$debug</datatype><normal> = 0 };</normal><normal>
+</normal><normal>	</normal><keyword>unless</keyword><normal> (</normal><function>defined</function><normal>(</normal><datatype>$debug</datatype><normal>)) { </normal><datatype>$debug</datatype><normal> = </normal><float>0</float><normal> };</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$substitutions</datatype><normal> = </normal><function>delete</function><normal> </normal><datatype>$args</datatype><normal>{</normal><operator>'</operator><string>substitutions</string><operator>'</operator><normal>};</normal><normal>
 </normal><normal>	</normal><keyword>unless</keyword><normal> (</normal><function>defined</function><normal>(</normal><datatype>$substitutions</datatype><normal>)) { </normal><datatype>$substitutions</datatype><normal> = {} };</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$formattable</datatype><normal> = </normal><function>delete</function><normal> </normal><datatype>$args</datatype><normal>{</normal><operator>'</operator><string>format_table</string><operator>'</operator><normal>};</normal><normal>
@@ -68,7 +68,7 @@
 </normal><normal>	</normal><keyword>my</keyword><normal> (</normal><datatype>$self</datatype><normal>, </normal><datatype>$c</datatype><normal>) = </normal><datatype>@_</datatype><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>if</keyword><normal> (</normal><function>defined</function><normal>(</normal><datatype>$c</datatype><normal>)) {</normal><normal>
 </normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>$t</datatype><normal> = </normal><datatype>$self</datatype><normal>-></normal><datatype>engine</datatype><normal>-></normal><datatype>stackTop</datatype><normal>;</normal><normal>
-</normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>$n</datatype><normal> = 0;</normal><normal>
+</normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>$n</datatype><normal> = </normal><float>0</float><normal>;</normal><normal>
 </normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>@o</datatype><normal> = ();</normal><normal>
 </normal><normal>		</normal><keyword>while</keyword><normal> (</normal><function>defined</function><normal>(</normal><datatype>$c</datatype><normal>->[</normal><datatype>$n</datatype><normal>])) {</normal><normal>
 </normal><normal>			</normal><function>push</function><normal> </normal><datatype>@o</datatype><normal>, </normal><datatype>$c</datatype><normal>->[</normal><datatype>$n</datatype><normal>];</normal><normal>
@@ -308,7 +308,7 @@
 </normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>$s</datatype><normal> = </normal><datatype>$self</datatype><normal>-></normal><datatype>substitutions</datatype><normal>;</normal><normal>
 </normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>$rr</datatype><normal> = </normal><operator>''</operator><normal>;</normal><normal>
 </normal><normal>		</normal><keyword>while</keyword><normal> (</normal><datatype>$f</datatype><normal> </normal><operator>ne</operator><normal> </normal><operator>''</operator><normal>) {</normal><normal>
-</normal><normal>			</normal><keyword>my</keyword><normal> </normal><datatype>$k</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$f</datatype><normal> , 0, </normal><float>1</float><normal>);</normal><normal>
+</normal><normal>			</normal><keyword>my</keyword><normal> </normal><datatype>$k</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$f</datatype><normal> , </normal><float>0</float><normal>, </normal><float>1</float><normal>);</normal><normal>
 </normal><normal>			</normal><datatype>$f</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$f</datatype><normal>, </normal><float>1</float><normal>, </normal><function>length</function><normal>(</normal><datatype>$f</datatype><normal>) </normal><decval>-1</decval><normal>);</normal><normal>
 </normal><normal>			</normal><keyword>if</keyword><normal> (</normal><function>exists</function><normal> </normal><datatype>$s</datatype><normal>->{</normal><datatype>$k</datatype><normal>}) {</normal><normal>
 </normal><normal>				 </normal><datatype>$rr</datatype><normal> = </normal><datatype>$rr</datatype><normal> . </normal><datatype>$s</datatype><normal>->{</normal><datatype>$k</datatype><normal>}</normal><normal>
@@ -319,7 +319,7 @@
 </normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>$rt</datatype><normal> = </normal><datatype>$self</datatype><normal>-></normal><datatype>formatTable</datatype><normal>;</normal><normal>
 </normal><normal>		</normal><keyword>if</keyword><normal> (</normal><function>exists</function><normal> </normal><datatype>$rt</datatype><normal>->{</normal><datatype>$t</datatype><normal>}) {</normal><normal>
 </normal><normal>			</normal><keyword>my</keyword><normal> </normal><datatype>$o</datatype><normal> = </normal><datatype>$rt</datatype><normal>->{</normal><datatype>$t</datatype><normal>};</normal><normal>
-</normal><normal>			</normal><datatype>$res</datatype><normal> = </normal><datatype>$res</datatype><normal> . </normal><datatype>$o</datatype><normal>->[0] . </normal><datatype>$rr</datatype><normal> . </normal><datatype>$o</datatype><normal>->[</normal><float>1</float><normal>];</normal><normal>
+</normal><normal>			</normal><datatype>$res</datatype><normal> = </normal><datatype>$res</datatype><normal> . </normal><datatype>$o</datatype><normal>->[</normal><float>0</float><normal>] . </normal><datatype>$rr</datatype><normal> . </normal><datatype>$o</datatype><normal>->[</normal><float>1</float><normal>];</normal><normal>
 </normal><normal>		} </normal><keyword>else</keyword><normal> {</normal><normal>
 </normal><normal>			</normal><datatype>$res</datatype><normal> = </normal><datatype>$res</datatype><normal> . </normal><datatype>$rr</datatype><normal>;</normal><normal>
 </normal><normal>			</normal><datatype>$self</datatype><normal>-></normal><datatype>logwarning</datatype><normal>(</normal><operator>"</operator><string>undefined format tag '</string><datatype>$t</datatype><operator>'"</operator><normal>);</normal><normal>
@@ -341,7 +341,7 @@
 </normal><normal>			</normal><datatype>$self</datatype><normal>-></normal><datatype>logwarning</datatype><normal>(</normal><operator>"</operator><string>cannot find callback for context '</string><datatype>$context</datatype><operator>'"</operator><normal>);</normal><normal>
 </normal><normal>		}</normal><normal>
 </normal><normal>	}</normal><normal>
-</normal><normal>	</normal><keyword>return</keyword><normal> 0;</normal><normal>
+</normal><normal>	</normal><keyword>return</keyword><normal> </normal><float>0</float><normal>;</normal><normal>
 </normal><normal>}</normal><normal>
 </normal><normal>
 </normal><keyword>sub </keyword><function>includeRules</function><normal> {</normal><normal>
@@ -352,7 +352,7 @@
 </normal><normal>	} </normal><keyword>else</keyword><normal> {</normal><normal>
 </normal><normal>		</normal><datatype>$self</datatype><normal>-></normal><datatype>logwarning</datatype><normal>(</normal><operator>"</operator><string>cannot find callback for context '</string><datatype>$context</datatype><operator>'"</operator><normal>);</normal><normal>
 </normal><normal>	}</normal><normal>
-</normal><normal>	</normal><keyword>return</keyword><normal> 0;</normal><normal>
+</normal><normal>	</normal><keyword>return</keyword><normal> </normal><float>0</float><normal>;</normal><normal>
 </normal><normal>}</normal><normal>
 </normal><normal>
 </normal><keyword>sub </keyword><function>initialize</function><normal> {</normal><normal>
@@ -454,7 +454,7 @@
 </normal><normal>	</normal><keyword>my</keyword><normal> (</normal><datatype>$self</datatype><normal>, </normal><datatype>$warning</datatype><normal>) = </normal><datatype>@_</datatype><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$top</datatype><normal> = </normal><datatype>$self</datatype><normal>-></normal><datatype>engine</datatype><normal>-></normal><datatype>stackTop</datatype><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>if</keyword><normal> (</normal><function>defined</function><normal> </normal><datatype>$top</datatype><normal>) {</normal><normal>
-</normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>$lang</datatype><normal> = </normal><datatype>$top</datatype><normal>->[0]</normal><operator>-</operator><normal>>language;</normal><normal>
+</normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>$lang</datatype><normal> = </normal><datatype>$top</datatype><normal>->[</normal><float>0</float><normal>]</normal><operator>-</operator><normal>>language;</normal><normal>
 </normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>$context</datatype><normal> = </normal><datatype>$top</datatype><normal>->[</normal><float>1</float><normal>];</normal><normal>
 </normal><normal>		</normal><datatype>$warning</datatype><normal> = </normal><operator>"</operator><datatype>$warning</datatype><char>\n</char><string>  Language => </string><datatype>$lang</datatype><string>, Context => </string><datatype>$context</datatype><char>\n</char><operator>"</operator><normal>;</normal><normal>
 </normal><normal>	} </normal><keyword>else</keyword><normal> {</normal><normal>
@@ -586,13 +586,13 @@
 </normal><normal>
 </normal><keyword>sub </keyword><function>stackTop</function><normal> {</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$self</datatype><normal> = </normal><function>shift</function><normal>;</normal><normal>
-</normal><normal>	</normal><keyword>return</keyword><normal> </normal><datatype>$self</datatype><normal>-></normal><datatype>stack</datatype><normal>->[0];</normal><normal>
+</normal><normal>	</normal><keyword>return</keyword><normal> </normal><datatype>$self</datatype><normal>-></normal><datatype>stack</datatype><normal>->[</normal><float>0</float><normal>];</normal><normal>
 </normal><normal>}</normal><normal>
 </normal><normal>
 </normal><keyword>sub </keyword><function>stateCompare</function><normal> {</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> (</normal><datatype>$self</datatype><normal>, </normal><datatype>$state</datatype><normal>) = </normal><datatype>@_</datatype><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$h</datatype><normal> = [ </normal><datatype>$self</datatype><normal>-></normal><datatype>stateGet</datatype><normal> ];</normal><normal>
-</normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$equal</datatype><normal> = 0;</normal><normal>
+</normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$equal</datatype><normal> = </normal><float>0</float><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>if</keyword><normal> (Dumper(</normal><datatype>$h</datatype><normal>) </normal><operator>eq</operator><normal> Dumper(</normal><datatype>$state</datatype><normal>)) { </normal><datatype>$equal</datatype><normal> = </normal><float>1</float><normal> };</normal><normal>
 </normal><normal>	</normal><keyword>return</keyword><normal> </normal><datatype>$equal</datatype><normal>;</normal><normal>
 </normal><normal>}</normal><normal>
@@ -620,7 +620,7 @@
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$text</datatype><normal> = </normal><function>shift</function><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$string</datatype><normal> = </normal><function>shift</function><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$insensitive</datatype><normal> = </normal><function>shift</function><normal>;</normal><normal>
-</normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$test</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$$text</datatype><normal>, 0, </normal><float>1</float><normal>);</normal><normal>
+</normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$test</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$$text</datatype><normal>, </normal><float>0</float><normal>, </normal><float>1</float><normal>);</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$bck</datatype><normal> = </normal><datatype>$test</datatype><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>if</keyword><normal> (</normal><datatype>$insensitive</datatype><normal>) {</normal><normal>
 </normal><normal>		</normal><datatype>$string</datatype><normal> = </normal><function>lc</function><normal>(</normal><datatype>$string</datatype><normal>);</normal><normal>
@@ -641,7 +641,7 @@
 </normal><normal>	</normal><keyword>if</keyword><normal> (</normal><datatype>$dyn</datatype><normal>) {</normal><normal>
 </normal><normal>		</normal><datatype>$char</datatype><normal> = </normal><datatype>$self</datatype><normal>-></normal><datatype>capturedParse</datatype><normal>(</normal><datatype>$char</datatype><normal>, </normal><float>1</float><normal>);</normal><normal>
 </normal><normal>	}</normal><normal>
-</normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$test</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$$text</datatype><normal>, 0, </normal><float>1</float><normal>);</normal><normal>
+</normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$test</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$$text</datatype><normal>, </normal><float>0</float><normal>, </normal><float>1</float><normal>);</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$bck</datatype><normal> = </normal><datatype>$test</datatype><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>if</keyword><normal> (</normal><datatype>$insensitive</datatype><normal>) {</normal><normal>
 </normal><normal>		</normal><datatype>$char</datatype><normal> = </normal><function>lc</function><normal>(</normal><datatype>$char</datatype><normal>);</normal><normal>
@@ -665,7 +665,7 @@
 </normal><normal>		</normal><datatype>$char1</datatype><normal> = </normal><datatype>$self</datatype><normal>-></normal><datatype>capturedParse</datatype><normal>(</normal><datatype>$char1</datatype><normal>, </normal><float>1</float><normal>);</normal><normal>
 </normal><normal>	}</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$string</datatype><normal> = </normal><datatype>$char</datatype><normal> . </normal><datatype>$char1</datatype><normal>;</normal><normal>
-</normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$test</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$$text</datatype><normal>, 0, </normal><float>2</float><normal>);</normal><normal>
+</normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$test</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$$text</datatype><normal>, </normal><float>0</float><normal>, </normal><float>2</float><normal>);</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$bck</datatype><normal> = </normal><datatype>$test</datatype><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>if</keyword><normal> (</normal><datatype>$insensitive</datatype><normal>) {</normal><normal>
 </normal><normal>		</normal><datatype>$string</datatype><normal> = </normal><function>lc</function><normal>(</normal><datatype>$string</datatype><normal>);</normal><normal>
@@ -814,7 +814,7 @@
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$char1</datatype><normal> = </normal><function>shift</function><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$insensitive</datatype><normal> = </normal><function>shift</function><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$string</datatype><normal> = </normal><operator>"</operator><datatype>$char</datatype><string>\[^</string><datatype>$char1</datatype><string>\]+</string><datatype>$char1</datatype><operator>"</operator><normal>;</normal><normal>
-</normal><normal>	</normal><keyword>return</keyword><normal> </normal><datatype>$self</datatype><normal>-></normal><datatype>testRegExpr</datatype><normal>(</normal><datatype>$text</datatype><normal>, </normal><datatype>$string</datatype><normal>, </normal><datatype>$insensitive</datatype><normal>, 0, </normal><datatype>@_</datatype><normal>);</normal><normal>
+</normal><normal>	</normal><keyword>return</keyword><normal> </normal><datatype>$self</datatype><normal>-></normal><datatype>testRegExpr</datatype><normal>(</normal><datatype>$text</datatype><normal>, </normal><datatype>$string</datatype><normal>, </normal><datatype>$insensitive</datatype><normal>, </normal><float>0</float><normal>, </normal><datatype>@_</datatype><normal>);</normal><normal>
 </normal><normal>}</normal><normal>
 </normal><normal>
 </normal><keyword>sub </keyword><function>testRegExpr</function><normal> {</normal><normal>
@@ -890,8 +890,8 @@
 </comment><comment>#			if (@cap) { $self->captured(\@cap) };</comment><comment>
 </comment><normal>		}</normal><normal>
 </normal><normal>	}</normal><normal>
-</normal><normal>	</normal><keyword>if</keyword><normal> (</normal><function>defined</function><normal>(</normal><datatype>$pos</datatype><normal>) </normal><operator>and</operator><normal> (</normal><datatype>$pos</datatype><normal> > 0)) {</normal><normal>
-</normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>$string</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$$text</datatype><normal>, 0, </normal><datatype>$pos</datatype><normal>);</normal><normal>
+</normal><normal>	</normal><keyword>if</keyword><normal> (</normal><function>defined</function><normal>(</normal><datatype>$pos</datatype><normal>) </normal><operator>and</operator><normal> (</normal><datatype>$pos</datatype><normal> > </normal><float>0</float><normal>)) {</normal><normal>
+</normal><normal>		</normal><keyword>my</keyword><normal> </normal><datatype>$string</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$$text</datatype><normal>, </normal><float>0</float><normal>, </normal><datatype>$pos</datatype><normal>);</normal><normal>
 </normal><normal>		</normal><keyword>return</keyword><normal> </normal><datatype>$self</datatype><normal>-></normal><datatype>parseResult</datatype><normal>(</normal><datatype>$text</datatype><normal>, </normal><datatype>$string</datatype><normal>, </normal><datatype>@_</datatype><normal>);</normal><normal>
 </normal><normal>	}</normal><normal>
 </normal><normal>	</normal><keyword>return</keyword><normal> </normal><operator>''</operator><normal>
@@ -906,7 +906,7 @@
 </normal><normal>	</normal><keyword>if</keyword><normal> (</normal><datatype>$dynamic</datatype><normal>) {</normal><normal>
 </normal><normal>		</normal><datatype>$string</datatype><normal> = </normal><datatype>$self</datatype><normal>-></normal><datatype>capturedParse</datatype><normal>(</normal><datatype>$string</datatype><normal>);</normal><normal>
 </normal><normal>	}</normal><normal>
-</normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$test</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$$text</datatype><normal>, 0, </normal><function>length</function><normal>(</normal><datatype>$string</datatype><normal>));</normal><normal>
+</normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$test</datatype><normal> = </normal><function>substr</function><normal>(</normal><datatype>$$text</datatype><normal>, </normal><float>0</float><normal>, </normal><function>length</function><normal>(</normal><datatype>$string</datatype><normal>));</normal><normal>
 </normal><normal>	</normal><keyword>my</keyword><normal> </normal><datatype>$bck</datatype><normal> = </normal><datatype>$test</datatype><normal>;</normal><normal>
 </normal><normal>	</normal><keyword>if</keyword><normal> (</normal><datatype>$insensitive</datatype><normal>) {</normal><normal>
 </normal><normal>		</normal><datatype>$string</datatype><normal> = </normal><function>lc</function><normal>(</normal><datatype>$string</datatype><normal>);</normal><normal>

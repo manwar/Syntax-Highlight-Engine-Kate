@@ -1,5 +1,15 @@
 Revision history for Perl extension Syntax::Highlight::Engine::Kate.
 
+0.15  2026-02-15 MANWAR
+      - Issue #23: Fixed a bug in testDetectSpaces() method in Template.pm
+        The regex /^([\\040|\\t]+)/ was incorrectly matching literal pipe
+        characters '|' in addition to spaces and tabs. Changed to
+        /^([\040\t]+)/ to correctly match only spaces (octal 040) and tabs.
+        This improves number highlighting in Perl and other languages that
+        use this method for whitespace detection.
+      - Updated test suite expected output files to match the corrected
+        highlighting behaviour
+
 0.14  2018-01-13 MANWAR
       - Applied patch provided by @gregoa (RT #124073).
 

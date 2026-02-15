@@ -4,7 +4,7 @@
 
 package Syntax::Highlight::Engine::Kate::Template;
 
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 
 use strict;
 use Carp qw(cluck);
@@ -693,7 +693,7 @@ sub testDetectIdentifier {
 sub testDetectSpaces {
 	my $self = shift;
 	my $text = shift;
-	if ($$text =~ /^([\\040|\\t]+)/) {
+	if ($$text =~ /^([\040\t]+)/) {
 		return $self->parseResult($text, $1, @_);
 	}
 	return ''
