@@ -11,7 +11,7 @@
 
 package Syntax::Highlight::Engine::Kate::XML_Debug;
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 use strict;
 use warnings;

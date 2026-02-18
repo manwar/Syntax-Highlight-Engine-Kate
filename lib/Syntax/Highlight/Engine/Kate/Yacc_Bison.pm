@@ -12,7 +12,7 @@
 
 package Syntax::Highlight::Engine::Kate::Yacc_Bison;
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 use strict;
 use warnings;

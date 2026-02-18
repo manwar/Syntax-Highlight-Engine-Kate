@@ -1,5 +1,13 @@
 Revision history for Perl extension Syntax::Highlight::Engine::Kate.
 
+0.16  2026-02-18
+      - Fixed issue #19, deprecation warning:
+         "Unescaped left brace in regex is deprecated"
+        This warning appears in Perl 5.30 and fatal in 5.32+.
+      - Changed '{' to '\{' in testRangeDetect call for interpolated strings
+      - Affects qq{}, qx{}, and other interpolated string contexts
+      - No functional changes, purely fixes warning for future Perl compatibility
+
 0.15  2026-02-15 MANWAR
       - Issue #23: Fixed a bug in testDetectSpaces() method in Template.pm
         The regex /^([\\040|\\t]+)/ was incorrectly matching literal pipe

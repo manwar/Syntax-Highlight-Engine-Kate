@@ -11,7 +11,7 @@
 
 package Syntax::Highlight::Engine::Kate::Ferite;
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 use strict;
 use warnings;

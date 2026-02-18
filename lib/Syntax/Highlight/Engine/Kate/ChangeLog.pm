@@ -12,7 +12,7 @@
 
 package Syntax::Highlight::Engine::Kate::ChangeLog;
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 use strict;
 use warnings;

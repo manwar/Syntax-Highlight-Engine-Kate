@@ -154,7 +154,7 @@ lib/Syntax/Highlight/Engine/Kate/Xslt.pm
 lib/Syntax/Highlight/Engine/Kate/Yacas.pm
 lib/Syntax/Highlight/Engine/Kate/Yacc_Bison.pm
 Makefile.PL
-MANIFEST    		This list of files
+MANIFEST        	This list of files
 README
 REGISTERED
 samples/highlight.abc
@@ -225,4 +225,5 @@ t/perl/highlighted/template.pl
 t/perl_highlighting.t
 t/perl_todo.t
 t/template_detectspaces.t
+t/unescape-left-brace.t
 xt/author/pod.t

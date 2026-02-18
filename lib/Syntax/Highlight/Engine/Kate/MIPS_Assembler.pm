@@ -12,7 +12,7 @@
 
 package Syntax::Highlight::Engine::Kate::MIPS_Assembler;
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 use strict;
 use warnings;
