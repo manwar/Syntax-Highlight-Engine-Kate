@@ -426,7 +426,7 @@ sub pmGenerate {
 		$self->lprint("=head1 SYNOPSIS");
 		$self->lprint;
 		$self->lprint(" require Syntax::Highlight::Engine::Kate::$name;");
-		$self->lprint(" my \$sh = new Syntax::Highlight::Engine::Kate::$name([");
+		$self->lprint(" my \$sh = Syntax::Highlight::Engine::Kate::$name->new([");
 			#todotodotodotodo
 		$self->lprint(" ]);");
 		$self->lprint;
@@ -704,7 +704,7 @@ sub policy {
 sub register {
 	my ($self, $new) = @_;
 	my $reg = $self->{'registered'};
-	my $k = new Syntax::Highlight::Engine::Kate::Convert::XMLData($new);
+	my $k = Syntax::Highlight::Engine::Kate::Convert::XMLData->new($new);
 	if (defined($k)) {
 		my $name = $k->language->{'name'};
 		if (exists $reg->{$name}) {
@@ -1101,7 +1101,7 @@ especially for generating highlight definitions from Kate's originals.
   use Syntax::Highlight::Engine::Kate::Convert::ToolKit;
 
   $hlfile = "/some/path/some-lang.xml";
-  $toolkit = new Syntax::Highlight::Engine::Kate::Convert::ToolKit();
+  $toolkit = Syntax::Highlight::Engine::Kate::Convert::ToolKit->new();
   # $toolkit->outcmd = sub { ... };  # optionally redefine bare output
   $outfile = $toolkit->register($hlfile);
   $toolkit->pmGenerate($outfile);

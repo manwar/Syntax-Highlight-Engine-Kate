@@ -2028,7 +2028,7 @@ Syntax::Highlight::Engine::Kate::XML_Debug - a Plugin for XML (Debug) syntax hig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::XML_Debug;
- my $sh = new Syntax::Highlight::Engine::Kate::XML_Debug([
+ my $sh = Syntax::Highlight::Engine::Kate::XML_Debug->new([
  ]);
 
 =head1 DESCRIPTION

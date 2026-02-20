@@ -3818,7 +3818,7 @@ Syntax::Highlight::Engine::Kate::Java - a Plugin for Java syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Java;
- my $sh = new Syntax::Highlight::Engine::Kate::Java([
+ my $sh = Syntax::Highlight::Engine::Kate::Java->new([
  ]);
 
 =head1 DESCRIPTION

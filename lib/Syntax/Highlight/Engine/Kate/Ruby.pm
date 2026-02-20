@@ -3098,7 +3098,7 @@ Syntax::Highlight::Engine::Kate::Ruby - a Plugin for Ruby syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Ruby;
- my $sh = new Syntax::Highlight::Engine::Kate::Ruby([
+ my $sh = Syntax::Highlight::Engine::Kate::Ruby->new([
  ]);
 
 =head1 DESCRIPTION

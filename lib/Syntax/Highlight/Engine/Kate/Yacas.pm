@@ -383,7 +383,7 @@ Syntax::Highlight::Engine::Kate::Yacas - a Plugin for yacas syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Yacas;
- my $sh = new Syntax::Highlight::Engine::Kate::Yacas([
+ my $sh = Syntax::Highlight::Engine::Kate::Yacas->new([
  ]);
 
 =head1 DESCRIPTION

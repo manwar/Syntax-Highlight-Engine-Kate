@@ -856,7 +856,7 @@ Syntax::Highlight::Engine::Kate::FreeBASIC - a Plugin for FreeBASIC syntax highl
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::FreeBASIC;
- my $sh = new Syntax::Highlight::Engine::Kate::FreeBASIC([
+ my $sh = Syntax::Highlight::Engine::Kate::FreeBASIC->new([
  ]);
 
 =head1 DESCRIPTION

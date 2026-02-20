@@ -696,7 +696,7 @@ Syntax::Highlight::Engine::Kate::Asm6502 - a Plugin for Asm6502 syntax highlight
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Asm6502;
- my $sh = new Syntax::Highlight::Engine::Kate::Asm6502([
+ my $sh = Syntax::Highlight::Engine::Kate::Asm6502->new([
  ]);
 
 =head1 DESCRIPTION

@@ -1129,7 +1129,7 @@ Syntax::Highlight::Engine::Kate::Doxygen - a Plugin for Doxygen syntax highlight
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Doxygen;
- my $sh = new Syntax::Highlight::Engine::Kate::Doxygen([
+ my $sh = Syntax::Highlight::Engine::Kate::Doxygen->new([
  ]);
 
 =head1 DESCRIPTION

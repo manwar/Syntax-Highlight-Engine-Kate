@@ -166,7 +166,7 @@ Syntax::Highlight::Engine::Kate::R_Script - a Plugin for R Script syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::R_Script;
- my $sh = new Syntax::Highlight::Engine::Kate::R_Script([
+ my $sh = Syntax::Highlight::Engine::Kate::R_Script->new([
  ]);
 
 =head1 DESCRIPTION

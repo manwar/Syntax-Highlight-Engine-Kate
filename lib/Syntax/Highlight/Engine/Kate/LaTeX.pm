@@ -695,7 +695,7 @@ Syntax::Highlight::Engine::Kate::LaTeX - a Plugin for LaTeX syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::LaTeX;
- my $sh = new Syntax::Highlight::Engine::Kate::LaTeX([
+ my $sh = Syntax::Highlight::Engine::Kate::LaTeX->new([
  ]);
 
 =head1 DESCRIPTION

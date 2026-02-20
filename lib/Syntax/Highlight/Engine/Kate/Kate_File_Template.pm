@@ -233,7 +233,7 @@ Syntax::Highlight::Engine::Kate::Kate_File_Template - a Plugin for Kate File Tem
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Kate_File_Template;
- my $sh = new Syntax::Highlight::Engine::Kate::Kate_File_Template([
+ my $sh = Syntax::Highlight::Engine::Kate::Kate_File_Template->new([
  ]);
 
 =head1 DESCRIPTION

@@ -109,7 +109,7 @@ Syntax::Highlight::Engine::Kate::M3U - a Plugin for M3U syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::M3U;
- my $sh = new Syntax::Highlight::Engine::Kate::M3U([
+ my $sh = Syntax::Highlight::Engine::Kate::M3U->new([
  ]);
 
 =head1 DESCRIPTION

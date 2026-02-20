@@ -1216,7 +1216,7 @@ Syntax::Highlight::Engine::Kate::PureBasic - a Plugin for PureBasic syntax highl
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::PureBasic;
- my $sh = new Syntax::Highlight::Engine::Kate::PureBasic([
+ my $sh = Syntax::Highlight::Engine::Kate::PureBasic->new([
  ]);
 
 =head1 DESCRIPTION

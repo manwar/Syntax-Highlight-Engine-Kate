@@ -607,7 +607,7 @@ Syntax::Highlight::Engine::Kate::Stata - a Plugin for Stata syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Stata;
- my $sh = new Syntax::Highlight::Engine::Kate::Stata([
+ my $sh = Syntax::Highlight::Engine::Kate::Stata->new([
  ]);
 
 =head1 DESCRIPTION

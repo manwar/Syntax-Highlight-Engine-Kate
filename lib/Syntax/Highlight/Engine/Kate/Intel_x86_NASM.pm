@@ -1448,7 +1448,7 @@ Syntax::Highlight::Engine::Kate::Intel_x86_NASM - a Plugin for Intel x86 (NASM) 
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Intel_x86_NASM;
- my $sh = new Syntax::Highlight::Engine::Kate::Intel_x86_NASM([
+ my $sh = Syntax::Highlight::Engine::Kate::Intel_x86_NASM->new([
  ]);
 
 =head1 DESCRIPTION

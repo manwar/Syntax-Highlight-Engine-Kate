@@ -169,7 +169,7 @@ Syntax::Highlight::Engine::Kate::Velocity - a Plugin for Velocity syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Velocity;
- my $sh = new Syntax::Highlight::Engine::Kate::Velocity([
+ my $sh = Syntax::Highlight::Engine::Kate::Velocity->new([
  ]);
 
 =head1 DESCRIPTION

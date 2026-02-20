@@ -1365,7 +1365,7 @@ Syntax::Highlight::Engine::Kate::Common_Lisp - a Plugin for Common Lisp syntax h
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Common_Lisp;
- my $sh = new Syntax::Highlight::Engine::Kate::Common_Lisp([
+ my $sh = Syntax::Highlight::Engine::Kate::Common_Lisp->new([
  ]);
 
 =head1 DESCRIPTION

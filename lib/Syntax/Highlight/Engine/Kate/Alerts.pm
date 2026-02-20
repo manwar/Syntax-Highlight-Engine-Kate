@@ -78,7 +78,7 @@ Syntax::Highlight::Engine::Kate::Alerts - a Plugin for Alerts syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Alerts;
- my $sh = new Syntax::Highlight::Engine::Kate::Alerts([
+ my $sh = Syntax::Highlight::Engine::Kate::Alerts->new([
  ]);
 
 =head1 DESCRIPTION

@@ -688,7 +688,7 @@ Syntax::Highlight::Engine::Kate::SQL_MySQL - a Plugin for SQL (MySQL) syntax hig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::SQL_MySQL;
- my $sh = new Syntax::Highlight::Engine::Kate::SQL_MySQL([
+ my $sh = Syntax::Highlight::Engine::Kate::SQL_MySQL->new([
  ]);
 
 =head1 DESCRIPTION

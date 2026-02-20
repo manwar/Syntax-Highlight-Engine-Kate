@@ -163,7 +163,7 @@ Syntax::Highlight::Engine::Kate::TI_Basic - a Plugin for TI Basic syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::TI_Basic;
- my $sh = new Syntax::Highlight::Engine::Kate::TI_Basic([
+ my $sh = Syntax::Highlight::Engine::Kate::TI_Basic->new([
  ]);
 
 =head1 DESCRIPTION

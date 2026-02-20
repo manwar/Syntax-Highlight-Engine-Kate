@@ -249,7 +249,7 @@ Syntax::Highlight::Engine::Kate::De_DE - a Plugin for de_DE syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::De_DE;
- my $sh = new Syntax::Highlight::Engine::Kate::De_DE([
+ my $sh = Syntax::Highlight::Engine::Kate::De_DE->new([
  ]);
 
 =head1 DESCRIPTION

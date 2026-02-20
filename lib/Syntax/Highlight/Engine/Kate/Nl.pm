@@ -250,7 +250,7 @@ Syntax::Highlight::Engine::Kate::Nl - a Plugin for nl syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Nl;
- my $sh = new Syntax::Highlight::Engine::Kate::Nl([
+ my $sh = Syntax::Highlight::Engine::Kate::Nl->new([
  ]);
 
 =head1 DESCRIPTION

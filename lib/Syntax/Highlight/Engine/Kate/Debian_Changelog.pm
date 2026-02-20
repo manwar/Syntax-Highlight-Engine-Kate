@@ -181,7 +181,7 @@ Syntax::Highlight::Engine::Kate::Debian_Changelog - a Plugin for Debian Changelo
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Debian_Changelog;
- my $sh = new Syntax::Highlight::Engine::Kate::Debian_Changelog([
+ my $sh = Syntax::Highlight::Engine::Kate::Debian_Changelog->new([
  ]);
 
 =head1 DESCRIPTION

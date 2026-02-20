@@ -969,7 +969,7 @@ Syntax::Highlight::Engine::Kate::JavaScript_PHP - a Plugin for JavaScript/PHP sy
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::JavaScript_PHP;
- my $sh = new Syntax::Highlight::Engine::Kate::JavaScript_PHP([
+ my $sh = Syntax::Highlight::Engine::Kate::JavaScript_PHP->new([
  ]);
 
 =head1 DESCRIPTION

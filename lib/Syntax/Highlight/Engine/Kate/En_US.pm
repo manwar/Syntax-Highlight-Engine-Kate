@@ -250,7 +250,7 @@ Syntax::Highlight::Engine::Kate::En_US - a Plugin for en_US syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::En_US;
- my $sh = new Syntax::Highlight::Engine::Kate::En_US([
+ my $sh = Syntax::Highlight::Engine::Kate::En_US->new([
  ]);
 
 =head1 DESCRIPTION

@@ -885,7 +885,7 @@ Syntax::Highlight::Engine::Kate::Logtalk - a Plugin for Logtalk syntax highlight
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Logtalk;
- my $sh = new Syntax::Highlight::Engine::Kate::Logtalk([
+ my $sh = Syntax::Highlight::Engine::Kate::Logtalk->new([
  ]);
 
 =head1 DESCRIPTION

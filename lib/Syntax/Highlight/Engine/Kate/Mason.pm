@@ -715,7 +715,7 @@ Syntax::Highlight::Engine::Kate::Mason - a Plugin for Mason syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Mason;
- my $sh = new Syntax::Highlight::Engine::Kate::Mason([
+ my $sh = Syntax::Highlight::Engine::Kate::Mason->new([
  ]);
 
 =head1 DESCRIPTION

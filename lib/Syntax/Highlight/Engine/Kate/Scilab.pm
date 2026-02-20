@@ -1290,7 +1290,7 @@ Syntax::Highlight::Engine::Kate::Scilab - a Plugin for scilab syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Scilab;
- my $sh = new Syntax::Highlight::Engine::Kate::Scilab([
+ my $sh = Syntax::Highlight::Engine::Kate::Scilab->new([
  ]);
 
 =head1 DESCRIPTION

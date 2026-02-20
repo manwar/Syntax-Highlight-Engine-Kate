@@ -293,7 +293,7 @@ Syntax::Highlight::Engine::Kate::Ada - a Plugin for Ada syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Ada;
- my $sh = new Syntax::Highlight::Engine::Kate::Ada([
+ my $sh = Syntax::Highlight::Engine::Kate::Ada->new([
  ]);
 
 =head1 DESCRIPTION

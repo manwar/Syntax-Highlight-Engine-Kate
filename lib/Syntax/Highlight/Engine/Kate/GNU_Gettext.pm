@@ -151,7 +151,7 @@ Syntax::Highlight::Engine::Kate::GNU_Gettext - a Plugin for GNU Gettext syntax h
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::GNU_Gettext;
- my $sh = new Syntax::Highlight::Engine::Kate::GNU_Gettext([
+ my $sh = Syntax::Highlight::Engine::Kate::GNU_Gettext->new([
  ]);
 
 =head1 DESCRIPTION

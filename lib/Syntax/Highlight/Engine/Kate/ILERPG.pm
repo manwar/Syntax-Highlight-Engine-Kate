@@ -523,7 +523,7 @@ Syntax::Highlight::Engine::Kate::ILERPG - a Plugin for ILERPG syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::ILERPG;
- my $sh = new Syntax::Highlight::Engine::Kate::ILERPG([
+ my $sh = Syntax::Highlight::Engine::Kate::ILERPG->new([
  ]);
 
 =head1 DESCRIPTION

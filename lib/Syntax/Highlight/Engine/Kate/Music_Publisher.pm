@@ -1809,7 +1809,7 @@ Syntax::Highlight::Engine::Kate::Music_Publisher - a Plugin for Music Publisher 
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Music_Publisher;
- my $sh = new Syntax::Highlight::Engine::Kate::Music_Publisher([
+ my $sh = Syntax::Highlight::Engine::Kate::Music_Publisher->new([
  ]);
 
 =head1 DESCRIPTION

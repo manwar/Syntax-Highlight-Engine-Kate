@@ -430,7 +430,7 @@ Syntax::Highlight::Engine::Kate::E_Language - a Plugin for E Language syntax hig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::E_Language;
- my $sh = new Syntax::Highlight::Engine::Kate::E_Language([
+ my $sh = Syntax::Highlight::Engine::Kate::E_Language->new([
  ]);
 
 =head1 DESCRIPTION

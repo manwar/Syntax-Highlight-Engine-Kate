@@ -1053,7 +1053,7 @@ Syntax::Highlight::Engine::Kate::SQL_PostgreSQL - a Plugin for SQL (PostgreSQL) 
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::SQL_PostgreSQL;
- my $sh = new Syntax::Highlight::Engine::Kate::SQL_PostgreSQL([
+ my $sh = Syntax::Highlight::Engine::Kate::SQL_PostgreSQL->new([
  ]);
 
 =head1 DESCRIPTION

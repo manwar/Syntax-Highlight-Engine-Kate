@@ -395,7 +395,7 @@ Syntax::Highlight::Engine::Kate::AHDL - a Plugin for AHDL syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::AHDL;
- my $sh = new Syntax::Highlight::Engine::Kate::AHDL([
+ my $sh = Syntax::Highlight::Engine::Kate::AHDL->new([
  ]);
 
 =head1 DESCRIPTION

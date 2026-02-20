@@ -142,7 +142,7 @@ Syntax::Highlight::Engine::Kate::WINE_Config - a Plugin for WINE Config syntax h
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::WINE_Config;
- my $sh = new Syntax::Highlight::Engine::Kate::WINE_Config([
+ my $sh = Syntax::Highlight::Engine::Kate::WINE_Config->new([
  ]);
 
 =head1 DESCRIPTION

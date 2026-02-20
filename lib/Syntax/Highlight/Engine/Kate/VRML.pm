@@ -271,7 +271,7 @@ Syntax::Highlight::Engine::Kate::VRML - a Plugin for VRML syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::VRML;
- my $sh = new Syntax::Highlight::Engine::Kate::VRML([
+ my $sh = Syntax::Highlight::Engine::Kate::VRML->new([
  ]);
 
 =head1 DESCRIPTION

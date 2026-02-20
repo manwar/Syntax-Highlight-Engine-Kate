@@ -2070,7 +2070,7 @@ Syntax::Highlight::Engine::Kate::Bash - a Plugin for Bash syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Bash;
- my $sh = new Syntax::Highlight::Engine::Kate::Bash([
+ my $sh = Syntax::Highlight::Engine::Kate::Bash->new([
  ]);
 
 =head1 DESCRIPTION

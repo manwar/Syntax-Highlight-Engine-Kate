@@ -338,7 +338,7 @@ Syntax::Highlight::Engine::Kate::FourGL - a Plugin for 4GL syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::FourGL;
- my $sh = new Syntax::Highlight::Engine::Kate::FourGL([
+ my $sh = Syntax::Highlight::Engine::Kate::FourGL->new([
  ]);
 
 =head1 DESCRIPTION

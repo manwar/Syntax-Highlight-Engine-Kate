@@ -488,7 +488,7 @@ Syntax::Highlight::Engine::Kate::ANSI_C89 - a Plugin for ANSI C89 syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::ANSI_C89;
- my $sh = new Syntax::Highlight::Engine::Kate::ANSI_C89([
+ my $sh = Syntax::Highlight::Engine::Kate::ANSI_C89->new([
  ]);
 
 =head1 DESCRIPTION

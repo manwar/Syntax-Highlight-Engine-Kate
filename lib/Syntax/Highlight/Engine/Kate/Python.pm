@@ -575,7 +575,7 @@ Syntax::Highlight::Engine::Kate::Python - a Plugin for Python syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Python;
- my $sh = new Syntax::Highlight::Engine::Kate::Python([
+ my $sh = Syntax::Highlight::Engine::Kate::Python->new([
  ]);
 
 =head1 DESCRIPTION

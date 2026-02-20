@@ -541,7 +541,7 @@ Syntax::Highlight::Engine::Kate::Euphoria - a Plugin for Euphoria syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Euphoria;
- my $sh = new Syntax::Highlight::Engine::Kate::Euphoria([
+ my $sh = Syntax::Highlight::Engine::Kate::Euphoria->new([
  ]);
 
 =head1 DESCRIPTION

@@ -539,7 +539,7 @@ Syntax::Highlight::Engine::Kate::Verilog - a Plugin for Verilog syntax highlight
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Verilog;
- my $sh = new Syntax::Highlight::Engine::Kate::Verilog([
+ my $sh = Syntax::Highlight::Engine::Kate::Verilog->new([
  ]);
 
 =head1 DESCRIPTION

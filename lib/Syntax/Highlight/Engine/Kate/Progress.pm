@@ -1827,7 +1827,7 @@ Syntax::Highlight::Engine::Kate::Progress - a Plugin for progress syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Progress;
- my $sh = new Syntax::Highlight::Engine::Kate::Progress([
+ my $sh = Syntax::Highlight::Engine::Kate::Progress->new([
  ]);
 
 =head1 DESCRIPTION

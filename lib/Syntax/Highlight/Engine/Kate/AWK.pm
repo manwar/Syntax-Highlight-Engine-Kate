@@ -249,7 +249,7 @@ Syntax::Highlight::Engine::Kate::AWK - a Plugin for AWK syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::AWK;
- my $sh = new Syntax::Highlight::Engine::Kate::AWK([
+ my $sh = Syntax::Highlight::Engine::Kate::AWK->new([
  ]);
 
 =head1 DESCRIPTION

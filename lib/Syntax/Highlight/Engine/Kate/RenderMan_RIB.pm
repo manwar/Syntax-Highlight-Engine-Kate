@@ -245,7 +245,7 @@ Syntax::Highlight::Engine::Kate::RenderMan_RIB - a Plugin for RenderMan RIB synt
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::RenderMan_RIB;
- my $sh = new Syntax::Highlight::Engine::Kate::RenderMan_RIB([
+ my $sh = Syntax::Highlight::Engine::Kate::RenderMan_RIB->new([
  ]);
 
 =head1 DESCRIPTION

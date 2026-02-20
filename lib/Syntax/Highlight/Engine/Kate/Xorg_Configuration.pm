@@ -236,7 +236,7 @@ Syntax::Highlight::Engine::Kate::Xorg_Configuration - a Plugin for x.org Configu
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Xorg_Configuration;
- my $sh = new Syntax::Highlight::Engine::Kate::Xorg_Configuration([
+ my $sh = Syntax::Highlight::Engine::Kate::Xorg_Configuration->new([
  ]);
 
 =head1 DESCRIPTION

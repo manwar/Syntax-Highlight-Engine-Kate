@@ -426,7 +426,7 @@ Syntax::Highlight::Engine::Kate::GNU_Assembler - a Plugin for GNU Assembler synt
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::GNU_Assembler;
- my $sh = new Syntax::Highlight::Engine::Kate::GNU_Assembler([
+ my $sh = Syntax::Highlight::Engine::Kate::GNU_Assembler->new([
  ]);
 
 =head1 DESCRIPTION

@@ -350,7 +350,7 @@ Syntax::Highlight::Engine::Kate::Lua - a Plugin for Lua syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Lua;
- my $sh = new Syntax::Highlight::Engine::Kate::Lua([
+ my $sh = Syntax::Highlight::Engine::Kate::Lua->new([
  ]);
 
 =head1 DESCRIPTION

@@ -600,7 +600,7 @@ Syntax::Highlight::Engine::Kate::Cisco - a Plugin for Cisco syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Cisco;
- my $sh = new Syntax::Highlight::Engine::Kate::Cisco([
+ my $sh = Syntax::Highlight::Engine::Kate::Cisco->new([
  ]);
 
 =head1 DESCRIPTION

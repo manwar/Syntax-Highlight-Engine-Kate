@@ -818,7 +818,7 @@ Syntax::Highlight::Engine::Kate::Apache_Configuration - a Plugin for Apache Conf
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Apache_Configuration;
- my $sh = new Syntax::Highlight::Engine::Kate::Apache_Configuration([
+ my $sh = Syntax::Highlight::Engine::Kate::Apache_Configuration->new([
  ]);
 
 =head1 DESCRIPTION

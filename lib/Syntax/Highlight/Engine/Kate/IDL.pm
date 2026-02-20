@@ -376,7 +376,7 @@ Syntax::Highlight::Engine::Kate::IDL - a Plugin for IDL syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::IDL;
- my $sh = new Syntax::Highlight::Engine::Kate::IDL([
+ my $sh = Syntax::Highlight::Engine::Kate::IDL->new([
  ]);
 
 =head1 DESCRIPTION

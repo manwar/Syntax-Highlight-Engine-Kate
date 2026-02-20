@@ -213,7 +213,7 @@ Syntax::Highlight::Engine::Kate::Eiffel - a Plugin for Eiffel syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Eiffel;
- my $sh = new Syntax::Highlight::Engine::Kate::Eiffel([
+ my $sh = Syntax::Highlight::Engine::Kate::Eiffel->new([
  ]);
 
 =head1 DESCRIPTION

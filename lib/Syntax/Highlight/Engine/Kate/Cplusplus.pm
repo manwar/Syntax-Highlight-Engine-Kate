@@ -774,7 +774,7 @@ Syntax::Highlight::Engine::Kate::Cplusplus - a Plugin for C++ syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Cplusplus;
- my $sh = new Syntax::Highlight::Engine::Kate::Cplusplus([
+ my $sh = Syntax::Highlight::Engine::Kate::Cplusplus->new([
  ]);
 
 =head1 DESCRIPTION

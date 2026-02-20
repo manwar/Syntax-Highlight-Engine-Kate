@@ -222,7 +222,7 @@ Syntax::Highlight::Engine::Kate::SML - a Plugin for SML syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::SML;
- my $sh = new Syntax::Highlight::Engine::Kate::SML([
+ my $sh = Syntax::Highlight::Engine::Kate::SML->new([
  ]);
 
 =head1 DESCRIPTION

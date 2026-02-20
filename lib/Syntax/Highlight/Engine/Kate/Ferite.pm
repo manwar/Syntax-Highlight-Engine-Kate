@@ -444,7 +444,7 @@ Syntax::Highlight::Engine::Kate::Ferite - a Plugin for ferite syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Ferite;
- my $sh = new Syntax::Highlight::Engine::Kate::Ferite([
+ my $sh = Syntax::Highlight::Engine::Kate::Ferite->new([
  ]);
 
 =head1 DESCRIPTION

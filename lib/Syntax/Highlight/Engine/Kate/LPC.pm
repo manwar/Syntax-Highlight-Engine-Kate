@@ -454,7 +454,7 @@ Syntax::Highlight::Engine::Kate::LPC - a Plugin for LPC syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::LPC;
- my $sh = new Syntax::Highlight::Engine::Kate::LPC([
+ my $sh = Syntax::Highlight::Engine::Kate::LPC->new([
  ]);
 
 =head1 DESCRIPTION

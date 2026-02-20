@@ -1182,7 +1182,7 @@ Syntax::Highlight::Engine::Kate::GDL - a Plugin for GDL syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::GDL;
- my $sh = new Syntax::Highlight::Engine::Kate::GDL([
+ my $sh = Syntax::Highlight::Engine::Kate::GDL->new([
  ]);
 
 =head1 DESCRIPTION

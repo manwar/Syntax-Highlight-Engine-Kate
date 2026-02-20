@@ -193,7 +193,7 @@ Syntax::Highlight::Engine::Kate::KBasic - a Plugin for KBasic syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::KBasic;
- my $sh = new Syntax::Highlight::Engine::Kate::KBasic([
+ my $sh = Syntax::Highlight::Engine::Kate::KBasic->new([
  ]);
 
 =head1 DESCRIPTION

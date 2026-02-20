@@ -250,7 +250,7 @@ Syntax::Highlight::Engine::Kate::Sather - a Plugin for Sather syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Sather;
- my $sh = new Syntax::Highlight::Engine::Kate::Sather([
+ my $sh = Syntax::Highlight::Engine::Kate::Sather->new([
  ]);
 
 =head1 DESCRIPTION

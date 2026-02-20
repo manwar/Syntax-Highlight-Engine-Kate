@@ -154,7 +154,7 @@ Syntax::Highlight::Engine::Kate::FourGLminusPER - a Plugin for 4GL-PER syntax hi
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::FourGLminusPER;
- my $sh = new Syntax::Highlight::Engine::Kate::FourGLminusPER([
+ my $sh = Syntax::Highlight::Engine::Kate::FourGLminusPER->new([
  ]);
 
 =head1 DESCRIPTION
