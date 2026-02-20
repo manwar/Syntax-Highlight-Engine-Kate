@@ -188,7 +188,7 @@ Syntax::Highlight::Engine::Kate::INI_Files - a Plugin for INI Files syntax highl
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::INI_Files;
- my $sh = new Syntax::Highlight::Engine::Kate::INI_Files([
+ my $sh = Syntax::Highlight::Engine::Kate::INI_Files->new([
  ]);
 
 =head1 DESCRIPTION

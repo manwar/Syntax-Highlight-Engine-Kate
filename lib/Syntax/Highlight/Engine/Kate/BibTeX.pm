@@ -210,7 +210,7 @@ Syntax::Highlight::Engine::Kate::BibTeX - a Plugin for BibTeX syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::BibTeX;
- my $sh = new Syntax::Highlight::Engine::Kate::BibTeX([
+ my $sh = Syntax::Highlight::Engine::Kate::BibTeX->new([
  ]);
 
 =head1 DESCRIPTION

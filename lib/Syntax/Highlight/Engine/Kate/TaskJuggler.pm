@@ -575,7 +575,7 @@ Syntax::Highlight::Engine::Kate::TaskJuggler - a Plugin for TaskJuggler syntax h
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::TaskJuggler;
- my $sh = new Syntax::Highlight::Engine::Kate::TaskJuggler([
+ my $sh = Syntax::Highlight::Engine::Kate::TaskJuggler->new([
  ]);
 
 =head1 DESCRIPTION

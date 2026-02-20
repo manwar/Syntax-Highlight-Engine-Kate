@@ -605,7 +605,7 @@ Syntax::Highlight::Engine::Kate::XML - a Plugin for XML syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::XML;
- my $sh = new Syntax::Highlight::Engine::Kate::XML([
+ my $sh = Syntax::Highlight::Engine::Kate::XML->new([
  ]);
 
 =head1 DESCRIPTION

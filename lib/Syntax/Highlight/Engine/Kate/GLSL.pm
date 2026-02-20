@@ -485,7 +485,7 @@ Syntax::Highlight::Engine::Kate::GLSL - a Plugin for GLSL syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::GLSL;
- my $sh = new Syntax::Highlight::Engine::Kate::GLSL([
+ my $sh = Syntax::Highlight::Engine::Kate::GLSL->new([
  ]);
 
 =head1 DESCRIPTION

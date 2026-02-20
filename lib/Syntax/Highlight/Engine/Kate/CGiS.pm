@@ -407,7 +407,7 @@ Syntax::Highlight::Engine::Kate::CGiS - a Plugin for CGiS syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::CGiS;
- my $sh = new Syntax::Highlight::Engine::Kate::CGiS([
+ my $sh = Syntax::Highlight::Engine::Kate::CGiS->new([
  ]);
 
 =head1 DESCRIPTION

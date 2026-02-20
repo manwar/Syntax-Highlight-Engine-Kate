@@ -800,7 +800,7 @@ Syntax::Highlight::Engine::Kate::XHarbour - a Plugin for xHarbour syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::XHarbour;
- my $sh = new Syntax::Highlight::Engine::Kate::XHarbour([
+ my $sh = Syntax::Highlight::Engine::Kate::XHarbour->new([
  ]);
 
 =head1 DESCRIPTION

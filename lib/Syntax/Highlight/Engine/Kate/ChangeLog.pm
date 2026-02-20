@@ -122,7 +122,7 @@ Syntax::Highlight::Engine::Kate::ChangeLog - a Plugin for ChangeLog syntax highl
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::ChangeLog;
- my $sh = new Syntax::Highlight::Engine::Kate::ChangeLog([
+ my $sh = Syntax::Highlight::Engine::Kate::ChangeLog->new([
  ]);
 
 =head1 DESCRIPTION

@@ -658,7 +658,7 @@ Syntax::Highlight::Engine::Kate::Tcl_Tk - a Plugin for Tcl/Tk syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Tcl_Tk;
- my $sh = new Syntax::Highlight::Engine::Kate::Tcl_Tk([
+ my $sh = Syntax::Highlight::Engine::Kate::Tcl_Tk->new([
  ]);
 
 =head1 DESCRIPTION

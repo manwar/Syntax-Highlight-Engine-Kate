@@ -481,7 +481,7 @@ Syntax::Highlight::Engine::Kate::Email - a Plugin for Email syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Email;
- my $sh = new Syntax::Highlight::Engine::Kate::Email([
+ my $sh = Syntax::Highlight::Engine::Kate::Email->new([
  ]);
 
 =head1 DESCRIPTION

@@ -579,7 +579,7 @@ Syntax::Highlight::Engine::Kate::Cg - a Plugin for Cg syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Cg;
- my $sh = new Syntax::Highlight::Engine::Kate::Cg([
+ my $sh = Syntax::Highlight::Engine::Kate::Cg->new([
  ]);
 
 =head1 DESCRIPTION

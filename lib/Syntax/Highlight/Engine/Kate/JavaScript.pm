@@ -899,7 +899,7 @@ Syntax::Highlight::Engine::Kate::JavaScript - a Plugin for JavaScript syntax hig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::JavaScript;
- my $sh = new Syntax::Highlight::Engine::Kate::JavaScript([
+ my $sh = Syntax::Highlight::Engine::Kate::JavaScript->new([
  ]);
 
 =head1 DESCRIPTION

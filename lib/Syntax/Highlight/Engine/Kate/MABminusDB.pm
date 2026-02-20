@@ -131,7 +131,7 @@ Syntax::Highlight::Engine::Kate::MABminusDB - a Plugin for MAB-DB syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::MABminusDB;
- my $sh = new Syntax::Highlight::Engine::Kate::MABminusDB([
+ my $sh = Syntax::Highlight::Engine::Kate::MABminusDB->new([
  ]);
 
 =head1 DESCRIPTION

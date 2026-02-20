@@ -627,7 +627,7 @@ Syntax::Highlight::Engine::Kate::Javadoc - a Plugin for Javadoc syntax highlight
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Javadoc;
- my $sh = new Syntax::Highlight::Engine::Kate::Javadoc([
+ my $sh = Syntax::Highlight::Engine::Kate::Javadoc->new([
  ]);
 
 =head1 DESCRIPTION

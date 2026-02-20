@@ -287,7 +287,7 @@ Syntax::Highlight::Engine::Kate::REXX - a Plugin for REXX syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::REXX;
- my $sh = new Syntax::Highlight::Engine::Kate::REXX([
+ my $sh = Syntax::Highlight::Engine::Kate::REXX->new([
  ]);
 
 =head1 DESCRIPTION

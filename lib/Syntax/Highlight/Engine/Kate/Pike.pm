@@ -445,7 +445,7 @@ Syntax::Highlight::Engine::Kate::Pike - a Plugin for Pike syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Pike;
- my $sh = new Syntax::Highlight::Engine::Kate::Pike([
+ my $sh = Syntax::Highlight::Engine::Kate::Pike->new([
  ]);
 
 =head1 DESCRIPTION

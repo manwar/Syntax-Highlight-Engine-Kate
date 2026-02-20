@@ -2110,7 +2110,7 @@ Syntax::Highlight::Engine::Kate::LilyPond - a Plugin for LilyPond syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::LilyPond;
- my $sh = new Syntax::Highlight::Engine::Kate::LilyPond([
+ my $sh = Syntax::Highlight::Engine::Kate::LilyPond->new([
  ]);
 
 =head1 DESCRIPTION

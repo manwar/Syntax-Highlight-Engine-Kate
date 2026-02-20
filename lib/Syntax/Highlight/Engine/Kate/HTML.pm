@@ -906,7 +906,7 @@ Syntax::Highlight::Engine::Kate::HTML - a Plugin for HTML syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::HTML;
- my $sh = new Syntax::Highlight::Engine::Kate::HTML([
+ my $sh = Syntax::Highlight::Engine::Kate::HTML->new([
  ]);
 
 =head1 DESCRIPTION

@@ -742,7 +742,7 @@ Syntax::Highlight::Engine::Kate::PicAsm - a Plugin for PicAsm syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::PicAsm;
- my $sh = new Syntax::Highlight::Engine::Kate::PicAsm([
+ my $sh = Syntax::Highlight::Engine::Kate::PicAsm->new([
  ]);
 
 =head1 DESCRIPTION

@@ -906,7 +906,7 @@ Syntax::Highlight::Engine::Kate::Clipper - a Plugin for Clipper syntax highlight
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Clipper;
- my $sh = new Syntax::Highlight::Engine::Kate::Clipper([
+ my $sh = Syntax::Highlight::Engine::Kate::Clipper->new([
  ]);
 
 =head1 DESCRIPTION

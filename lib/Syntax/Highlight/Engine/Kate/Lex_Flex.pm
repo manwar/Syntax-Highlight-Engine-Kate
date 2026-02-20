@@ -618,7 +618,7 @@ Syntax::Highlight::Engine::Kate::Lex_Flex - a Plugin for Lex/Flex syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Lex_Flex;
- my $sh = new Syntax::Highlight::Engine::Kate::Lex_Flex([
+ my $sh = Syntax::Highlight::Engine::Kate::Lex_Flex->new([
  ]);
 
 =head1 DESCRIPTION

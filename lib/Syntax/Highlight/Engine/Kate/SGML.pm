@@ -171,7 +171,7 @@ Syntax::Highlight::Engine::Kate::SGML - a Plugin for SGML syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::SGML;
- my $sh = new Syntax::Highlight::Engine::Kate::SGML([
+ my $sh = Syntax::Highlight::Engine::Kate::SGML->new([
  ]);
 
 =head1 DESCRIPTION

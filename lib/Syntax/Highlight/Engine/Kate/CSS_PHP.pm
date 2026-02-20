@@ -1233,7 +1233,7 @@ Syntax::Highlight::Engine::Kate::CSS_PHP - a Plugin for CSS/PHP syntax highlight
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::CSS_PHP;
- my $sh = new Syntax::Highlight::Engine::Kate::CSS_PHP([
+ my $sh = Syntax::Highlight::Engine::Kate::CSS_PHP->new([
  ]);
 
 =head1 DESCRIPTION

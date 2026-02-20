@@ -364,7 +364,7 @@ Syntax::Highlight::Engine::Kate::Objective_Caml - a Plugin for Objective Caml sy
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Objective_Caml;
- my $sh = new Syntax::Highlight::Engine::Kate::Objective_Caml([
+ my $sh = Syntax::Highlight::Engine::Kate::Objective_Caml->new([
  ]);
 
 =head1 DESCRIPTION

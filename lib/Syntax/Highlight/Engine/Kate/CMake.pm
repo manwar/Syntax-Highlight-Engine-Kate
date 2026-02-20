@@ -343,7 +343,7 @@ Syntax::Highlight::Engine::Kate::CMake - a Plugin for CMake syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::CMake;
- my $sh = new Syntax::Highlight::Engine::Kate::CMake([
+ my $sh = Syntax::Highlight::Engine::Kate::CMake->new([
  ]);
 
 =head1 DESCRIPTION

@@ -137,7 +137,7 @@ Syntax::Highlight::Engine::Kate::Diff - a Plugin for Diff syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Diff;
- my $sh = new Syntax::Highlight::Engine::Kate::Diff([
+ my $sh = Syntax::Highlight::Engine::Kate::Diff->new([
  ]);
 
 =head1 DESCRIPTION

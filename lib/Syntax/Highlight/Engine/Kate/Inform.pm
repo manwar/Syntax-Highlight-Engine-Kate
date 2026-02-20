@@ -802,7 +802,7 @@ Syntax::Highlight::Engine::Kate::Inform - a Plugin for Inform syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Inform;
- my $sh = new Syntax::Highlight::Engine::Kate::Inform([
+ my $sh = Syntax::Highlight::Engine::Kate::Inform->new([
  ]);
 
 =head1 DESCRIPTION

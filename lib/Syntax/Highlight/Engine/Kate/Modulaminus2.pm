@@ -344,7 +344,7 @@ Syntax::Highlight::Engine::Kate::Modulaminus2 - a Plugin for Modula-2 syntax hig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Modulaminus2;
- my $sh = new Syntax::Highlight::Engine::Kate::Modulaminus2([
+ my $sh = Syntax::Highlight::Engine::Kate::Modulaminus2->new([
  ]);
 
 =head1 DESCRIPTION

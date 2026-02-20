@@ -416,7 +416,7 @@ Syntax::Highlight::Engine::Kate::Pascal - a Plugin for Pascal syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Pascal;
- my $sh = new Syntax::Highlight::Engine::Kate::Pascal([
+ my $sh = Syntax::Highlight::Engine::Kate::Pascal->new([
  ]);
 
 =head1 DESCRIPTION

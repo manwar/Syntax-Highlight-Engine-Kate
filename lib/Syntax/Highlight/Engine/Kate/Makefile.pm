@@ -282,7 +282,7 @@ Syntax::Highlight::Engine::Kate::Makefile - a Plugin for Makefile syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Makefile;
- my $sh = new Syntax::Highlight::Engine::Kate::Makefile([
+ my $sh = Syntax::Highlight::Engine::Kate::Makefile->new([
  ]);
 
 =head1 DESCRIPTION

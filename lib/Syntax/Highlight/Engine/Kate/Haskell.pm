@@ -572,7 +572,7 @@ Syntax::Highlight::Engine::Kate::Haskell - a Plugin for Haskell syntax highlight
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Haskell;
- my $sh = new Syntax::Highlight::Engine::Kate::Haskell([
+ my $sh = Syntax::Highlight::Engine::Kate::Haskell->new([
  ]);
 
 =head1 DESCRIPTION

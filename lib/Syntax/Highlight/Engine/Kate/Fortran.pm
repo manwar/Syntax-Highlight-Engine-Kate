@@ -1170,7 +1170,7 @@ Syntax::Highlight::Engine::Kate::Fortran - a Plugin for Fortran syntax highlight
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Fortran;
- my $sh = new Syntax::Highlight::Engine::Kate::Fortran([
+ my $sh = Syntax::Highlight::Engine::Kate::Fortran->new([
  ]);
 
 =head1 DESCRIPTION

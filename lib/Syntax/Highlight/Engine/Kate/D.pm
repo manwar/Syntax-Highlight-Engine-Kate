@@ -841,7 +841,7 @@ Syntax::Highlight::Engine::Kate::D - a Plugin for D syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::D;
- my $sh = new Syntax::Highlight::Engine::Kate::D([
+ my $sh = Syntax::Highlight::Engine::Kate::D->new([
  ]);
 
 =head1 DESCRIPTION

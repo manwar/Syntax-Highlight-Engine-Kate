@@ -272,7 +272,7 @@ Syntax::Highlight::Engine::Kate::Txt2tags - a Plugin for txt2tags syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Txt2tags;
- my $sh = new Syntax::Highlight::Engine::Kate::Txt2tags([
+ my $sh = Syntax::Highlight::Engine::Kate::Txt2tags->new([
  ]);
 
 =head1 DESCRIPTION

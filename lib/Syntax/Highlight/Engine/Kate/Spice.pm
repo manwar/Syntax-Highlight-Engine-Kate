@@ -144,7 +144,7 @@ Syntax::Highlight::Engine::Kate::Spice - a Plugin for Spice syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Spice;
- my $sh = new Syntax::Highlight::Engine::Kate::Spice([
+ my $sh = Syntax::Highlight::Engine::Kate::Spice->new([
  ]);
 
 =head1 DESCRIPTION

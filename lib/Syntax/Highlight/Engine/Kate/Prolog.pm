@@ -391,7 +391,7 @@ Syntax::Highlight::Engine::Kate::Prolog - a Plugin for Prolog syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Prolog;
- my $sh = new Syntax::Highlight::Engine::Kate::Prolog([
+ my $sh = Syntax::Highlight::Engine::Kate::Prolog->new([
  ]);
 
 =head1 DESCRIPTION

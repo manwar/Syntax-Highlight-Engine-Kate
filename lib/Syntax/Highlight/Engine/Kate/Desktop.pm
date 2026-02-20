@@ -115,7 +115,7 @@ Syntax::Highlight::Engine::Kate::Desktop - a Plugin for .desktop syntax highligh
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Desktop;
- my $sh = new Syntax::Highlight::Engine::Kate::Desktop([
+ my $sh = Syntax::Highlight::Engine::Kate::Desktop->new([
  ]);
 
 =head1 DESCRIPTION

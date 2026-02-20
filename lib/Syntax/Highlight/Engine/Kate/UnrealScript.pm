@@ -464,7 +464,7 @@ Syntax::Highlight::Engine::Kate::UnrealScript - a Plugin for UnrealScript syntax
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::UnrealScript;
- my $sh = new Syntax::Highlight::Engine::Kate::UnrealScript([
+ my $sh = Syntax::Highlight::Engine::Kate::UnrealScript->new([
  ]);
 
 =head1 DESCRIPTION

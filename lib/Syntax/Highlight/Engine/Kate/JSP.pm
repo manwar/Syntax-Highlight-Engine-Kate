@@ -4151,7 +4151,7 @@ Syntax::Highlight::Engine::Kate::JSP - a Plugin for JSP syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::JSP;
- my $sh = new Syntax::Highlight::Engine::Kate::JSP([
+ my $sh = Syntax::Highlight::Engine::Kate::JSP->new([
  ]);
 
 =head1 DESCRIPTION

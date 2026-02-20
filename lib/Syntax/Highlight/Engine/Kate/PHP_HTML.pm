@@ -1056,7 +1056,7 @@ Syntax::Highlight::Engine::Kate::PHP_HTML - a Plugin for PHP (HTML) syntax highl
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::PHP_HTML;
- my $sh = new Syntax::Highlight::Engine::Kate::PHP_HTML([
+ my $sh = Syntax::Highlight::Engine::Kate::PHP_HTML->new([
  ]);
 
 =head1 DESCRIPTION

@@ -183,7 +183,7 @@ Syntax::Highlight::Engine::Kate::CUE_Sheet - a Plugin for CUE Sheet syntax highl
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::CUE_Sheet;
- my $sh = new Syntax::Highlight::Engine::Kate::CUE_Sheet([
+ my $sh = Syntax::Highlight::Engine::Kate::CUE_Sheet->new([
  ]);
 
 =head1 DESCRIPTION

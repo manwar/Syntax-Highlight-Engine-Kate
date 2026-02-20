@@ -2314,7 +2314,7 @@ Syntax::Highlight::Engine::Kate::Ansys - a Plugin for Ansys syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Ansys;
- my $sh = new Syntax::Highlight::Engine::Kate::Ansys([
+ my $sh = Syntax::Highlight::Engine::Kate::Ansys->new([
  ]);
 
 =head1 DESCRIPTION

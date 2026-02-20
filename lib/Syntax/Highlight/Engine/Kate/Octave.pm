@@ -2534,7 +2534,7 @@ Syntax::Highlight::Engine::Kate::Octave - a Plugin for Octave syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Octave;
- my $sh = new Syntax::Highlight::Engine::Kate::Octave([
+ my $sh = Syntax::Highlight::Engine::Kate::Octave->new([
  ]);
 
 =head1 DESCRIPTION

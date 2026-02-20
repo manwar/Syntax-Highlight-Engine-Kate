@@ -516,7 +516,7 @@ Syntax::Highlight::Engine::Kate::MIPS_Assembler - a Plugin for MIPS Assembler sy
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::MIPS_Assembler;
- my $sh = new Syntax::Highlight::Engine::Kate::MIPS_Assembler([
+ my $sh = Syntax::Highlight::Engine::Kate::MIPS_Assembler->new([
  ]);
 
 =head1 DESCRIPTION

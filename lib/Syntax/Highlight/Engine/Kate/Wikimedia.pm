@@ -517,7 +517,7 @@ Syntax::Highlight::Engine::Kate::Wikimedia - a Plugin for Wikimedia syntax highl
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Wikimedia;
- my $sh = new Syntax::Highlight::Engine::Kate::Wikimedia([
+ my $sh = Syntax::Highlight::Engine::Kate::Wikimedia->new([
  ]);
 
 =head1 DESCRIPTION

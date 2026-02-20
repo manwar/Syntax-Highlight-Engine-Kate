@@ -433,7 +433,7 @@ Syntax::Highlight::Engine::Kate::VHDL - a Plugin for VHDL syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::VHDL;
- my $sh = new Syntax::Highlight::Engine::Kate::VHDL([
+ my $sh = Syntax::Highlight::Engine::Kate::VHDL->new([
  ]);
 
 =head1 DESCRIPTION

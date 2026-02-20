@@ -635,7 +635,7 @@ Syntax::Highlight::Engine::Kate::RSI_IDL - a Plugin for RSI IDL syntax highlight
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::RSI_IDL;
- my $sh = new Syntax::Highlight::Engine::Kate::RSI_IDL([
+ my $sh = Syntax::Highlight::Engine::Kate::RSI_IDL->new([
  ]);
 
 =head1 DESCRIPTION

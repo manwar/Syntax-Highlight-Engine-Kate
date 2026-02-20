@@ -1202,7 +1202,7 @@ Syntax::Highlight::Engine::Kate::POVminusRay - a Plugin for POV-Ray syntax highl
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::POVminusRay;
- my $sh = new Syntax::Highlight::Engine::Kate::POVminusRay([
+ my $sh = Syntax::Highlight::Engine::Kate::POVminusRay->new([
  ]);
 
 =head1 DESCRIPTION

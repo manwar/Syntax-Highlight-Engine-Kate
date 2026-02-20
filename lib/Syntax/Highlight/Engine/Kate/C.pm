@@ -634,7 +634,7 @@ Syntax::Highlight::Engine::Kate::C - a Plugin for C syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::C;
- my $sh = new Syntax::Highlight::Engine::Kate::C([
+ my $sh = Syntax::Highlight::Engine::Kate::C->new([
  ]);
 
 =head1 DESCRIPTION

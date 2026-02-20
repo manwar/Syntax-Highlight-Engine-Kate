@@ -1207,7 +1207,7 @@ Syntax::Highlight::Engine::Kate::SQL - a Plugin for SQL syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::SQL;
- my $sh = new Syntax::Highlight::Engine::Kate::SQL([
+ my $sh = Syntax::Highlight::Engine::Kate::SQL->new([
  ]);
 
 =head1 DESCRIPTION

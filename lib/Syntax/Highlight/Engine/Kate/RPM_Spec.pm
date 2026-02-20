@@ -215,7 +215,7 @@ Syntax::Highlight::Engine::Kate::RPM_Spec - a Plugin for RPM Spec syntax highlig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::RPM_Spec;
- my $sh = new Syntax::Highlight::Engine::Kate::RPM_Spec([
+ my $sh = Syntax::Highlight::Engine::Kate::RPM_Spec->new([
  ]);
 
 =head1 DESCRIPTION

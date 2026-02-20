@@ -2471,7 +2471,7 @@ Syntax::Highlight::Engine::Kate::Quake_Script - a Plugin for Quake Script syntax
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Quake_Script;
- my $sh = new Syntax::Highlight::Engine::Kate::Quake_Script([
+ my $sh = Syntax::Highlight::Engine::Kate::Quake_Script->new([
  ]);
 
 =head1 DESCRIPTION

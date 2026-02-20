@@ -621,7 +621,7 @@ Syntax::Highlight::Engine::Kate::Yacc_Bison - a Plugin for Yacc/Bison syntax hig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Yacc_Bison;
- my $sh = new Syntax::Highlight::Engine::Kate::Yacc_Bison([
+ my $sh = Syntax::Highlight::Engine::Kate::Yacc_Bison->new([
  ]);
 
 =head1 DESCRIPTION

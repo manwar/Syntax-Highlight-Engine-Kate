@@ -291,7 +291,7 @@ Syntax::Highlight::Engine::Kate::Debian_Control - a Plugin for Debian Control sy
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Debian_Control;
- my $sh = new Syntax::Highlight::Engine::Kate::Debian_Control([
+ my $sh = Syntax::Highlight::Engine::Kate::Debian_Control->new([
  ]);
 
 =head1 DESCRIPTION

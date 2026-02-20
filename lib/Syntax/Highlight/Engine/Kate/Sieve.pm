@@ -250,7 +250,7 @@ Syntax::Highlight::Engine::Kate::Sieve - a Plugin for Sieve syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Sieve;
- my $sh = new Syntax::Highlight::Engine::Kate::Sieve([
+ my $sh = Syntax::Highlight::Engine::Kate::Sieve->new([
  ]);
 
 =head1 DESCRIPTION

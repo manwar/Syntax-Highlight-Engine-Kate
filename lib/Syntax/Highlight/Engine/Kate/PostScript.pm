@@ -545,7 +545,7 @@ Syntax::Highlight::Engine::Kate::PostScript - a Plugin for PostScript syntax hig
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::PostScript;
- my $sh = new Syntax::Highlight::Engine::Kate::PostScript([
+ my $sh = Syntax::Highlight::Engine::Kate::PostScript->new([
  ]);
 
 =head1 DESCRIPTION

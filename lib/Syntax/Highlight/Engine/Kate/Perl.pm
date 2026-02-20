@@ -2916,7 +2916,7 @@ Syntax::Highlight::Engine::Kate::Perl - a Plugin for Perl syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Perl;
- my $sh = new Syntax::Highlight::Engine::Kate::Perl([
+ my $sh = Syntax::Highlight::Engine::Kate::Perl->new([
  ]);
 
 =head1 DESCRIPTION

@@ -591,7 +591,7 @@ Syntax::Highlight::Engine::Kate::Literate_Haskell - a Plugin for Literate Haskel
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Literate_Haskell;
- my $sh = new Syntax::Highlight::Engine::Kate::Literate_Haskell([
+ my $sh = Syntax::Highlight::Engine::Kate::Literate_Haskell->new([
  ]);
 
 =head1 DESCRIPTION

@@ -781,7 +781,7 @@ Syntax::Highlight::Engine::Kate::Scheme - a Plugin for Scheme syntax highlightin
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::Scheme;
- my $sh = new Syntax::Highlight::Engine::Kate::Scheme([
+ my $sh = Syntax::Highlight::Engine::Kate::Scheme->new([
  ]);
 
 =head1 DESCRIPTION

@@ -312,7 +312,7 @@ Syntax::Highlight::Engine::Kate::ABC - a Plugin for ABC syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::ABC;
- my $sh = new Syntax::Highlight::Engine::Kate::ABC([
+ my $sh = Syntax::Highlight::Engine::Kate::ABC->new([
  ]);
 
 =head1 DESCRIPTION

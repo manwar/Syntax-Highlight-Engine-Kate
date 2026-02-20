@@ -423,7 +423,7 @@ Syntax::Highlight::Engine::Kate::ObjectiveminusC - a Plugin for Objective-C synt
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::ObjectiveminusC;
- my $sh = new Syntax::Highlight::Engine::Kate::ObjectiveminusC([
+ my $sh = Syntax::Highlight::Engine::Kate::ObjectiveminusC->new([
  ]);
 
 =head1 DESCRIPTION

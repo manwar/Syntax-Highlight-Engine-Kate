@@ -511,7 +511,7 @@ Syntax::Highlight::Engine::Kate::LDIF - a Plugin for LDIF syntax highlighting
 =head1 SYNOPSIS
 
  require Syntax::Highlight::Engine::Kate::LDIF;
- my $sh = new Syntax::Highlight::Engine::Kate::LDIF([
+ my $sh = Syntax::Highlight::Engine::Kate::LDIF->new([
  ]);
 
 =head1 DESCRIPTION
