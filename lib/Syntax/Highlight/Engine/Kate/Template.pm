@@ -319,7 +319,14 @@ sub highlightText {
 		my $rt = $self->formatTable;
 		if (exists $rt->{$t}) {
 			my $o = $rt->{$t};
-			$res = $res . $o->[0] . $rr . $o->[1];
+
+            if ( 'CODE' eq ref $o ) {
+    			local $_ = $rr;
+    			$res = $res . $o->( $rr );
+            }
+            else {
+    			$res = $res . $o->[0] . $rr . $o->[1];
+    	    }
 		} else {
 			$res = $res . $rr;
 			$self->logwarning("undefined format tag '$t'");
